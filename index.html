@@ -4,21 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evidence</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">Evidence. Сучасна педіатрія</a>
-        <ul id="navigation">
-          <li><a href="#info">Про нас</a></li>
-          <li><a href="#doctors">Лікарі</a></li>
-          <li><a href="#pay">Вартість</a></li>
-          <li><a href="#questions">Запитання</a></li>
-          <li><a href="#response">Відгуки</a></li>
-          <li><a href="#contacts">Контакти</a></li>
-          <li>
+    <header class="header">
+      <nav class="header-navigation">
+        <a href="./index.html" class="header-logo"
+          >Evidence. Сучасна педіатрія</a
+        >
+        <ul id="navigation" class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="#info" class="header-menu-link-about">Про нас</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#doctors" class="header-menu-link">Лікарі</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#pay" class="header-menu-link">Вартість</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#questions" class="header-menu-link">Запитання</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#response" class="header-menu-link">Відгуки</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#contacts" class="header-menu-link">Контакти</a>
+          </li>
+          <li class="header-menu-item">
             <img
+              class="header-menu-link"
               src="./images/login.svg"
               alt="login-icon"
               width="42"
@@ -28,118 +50,150 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <section>
-        <h1 id="about">Evidence</h1>
-        <p>Територія сучасної педіатрії - доказ нашої любові</p>
-        <button type="button">Записатись на прийом</button>
-        <ul>
-          <li><a href=""></a>З’єднаємо зараз</li>
-          <li><a href=""></a>Цілодобово</li>
-          <li><a href=""></a>Вартість 400 грн</li>
-        </ul>
-      </section>
-      <section>
-        <h2 id="info">Про клініку в цифрах (2022)</h2>
-        <ul>
-          <li>
-            <h3>13 370</h3>
-            <p>щасливих пацієнтів</p>
+      <section class="hero">
+        <h1 id="about" class="hero-title">Evidence</h1>
+        <p class="hero-text">
+          Територія сучасної педіатрії - доказ нашої любові
+        </p>
+        <button type="button" class="hero-button">Записатись на прийом</button>
+        <ul class="hero-list">
+          <li class="hero-list-item">
+            <a href="" class="hero-list-link"></a>З’єднаємо зараз
           </li>
-          <li>
-            <h3>568</h3>
-            <p>вакцинацій</p>
+          <li class="hero-list-item">
+            <a href="" class="hero-list-link"></a>Цілодобово
           </li>
-          <li>
-            <h3>1 247</h3>
-            <p>лабораторних досліджень</p>
-          </li>
-          <li>
-            <h3>+10</h3>
-            <p>років турботи про Ваших малят</p>
+          <li class="hero-list-item">
+            <a href="" class="hero-list-link"></a>Вартість 400 грн
           </li>
         </ul>
       </section>
-      <section>
-        <h2 id="doctors">Лікарі</h2>
-        <ul>
-          <li>
-            <h3>+100</h3>
-            <p>досвідчених лікарів</p>
+      <section class="about">
+        <h2 id="info" class="about-text">Про клініку в цифрах (2022)</h2>
+        <ul class="about-list">
+          <li class="about-list-item">
+            <h3 class="about-list-title-1">13 370</h3>
+            <p class="about-list-text">щасливих пацієнтів</p>
           </li>
-          <li>
-            <h3>35 років</h3>
-            <p>середній стаж</p>
+          <li class="about-list-item">
+            <h3 class="about-list-title-2">568</h3>
+            <p class="about-list-text">вакцинацій</p>
           </li>
-        </ul>
-        <button type="button">Знайти лікаря</button>
-      </section>
-      <section>
-        <h2 id="pay">Послуги та вартість</h2>
-        <ul>
-          <li>
-            <p>Педіатрія</p>
+          <li class="about-list-item">
+            <h3 class="about-list-title-3">1 247</h3>
+            <p class="about-list-text">лабораторних досліджень</p>
           </li>
-          <li>
-            <p>Вакцинація</p>
-          </li>
-          <li>
-            <p>Ортопед</p>
-          </li>
-          <li>
-            <p>Гастроентеролог</p>
-          </li>
-          <li>
-            <p>Стоматолог</p>
-          </li>
-          <li>
-            <p>Невролог</p>
-          </li>
-          <li>
-            <p>Кардіолог</p>
-          </li>
-          <li>
-            <p>Уролог</p>
-          </li>
-          <li>
-            <p>Лабораторія</p>
-          </li>
-          <li>
-            <p>Дивитись ще</p>
+          <li class="about-list-item">
+            <h3 class="about-list-title-4">+10</h3>
+            <p class="about-list-text">років турботи про Ваших малят</p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2 id="questions">Питання-відповідь</h2>
-        <ul>
-          <li>Загальні питання</li>
-          <li>Реєстрація та вхід</li>
-          <li>Вакцинація</li>
-          <li>Відео-консультація</li>
+      <section class="doctorpage">
+        <h2 id="doctors" class="doctorpage-title">Лікарі</h2>
+        <ul class="doctorpage-list">
+          <li class="doctorpage-list-item">
+            <h3 class="doctorpage-list-title">+100</h3>
+            <p class="doctorpage-list-text">досвідчених лікарів</p>
+          </li>
+          <li class="doctorpage-list-item">
+            <h3 class="doctorpage-list-title">35 років</h3>
+            <p class="doctorpage-list-text">середній стаж</p>
+          </li>
         </ul>
-        <ol>
-          <li>Як записатись до лікаря самостійно?</li>
-          <li>Як записатись до лікаря за направленням?</li>
-          <li>Як скасувати запис?</li>
-          <li>Як переглянути запис на прийом?</li>
-          <li>Як залишити відгук про лікаря?</li>
-          <li>Як змінити особисті дані?</li>
+        <button type="button" class="doctorpage-button">Знайти лікаря</button>
+        <ul class="doctorpage-photo-list">
+          <li class="doctorpage-photo-list-item">
+            <img src="./images/doc-1.jpg" alt="Doctor 1" />
+          </li>
+          <li class="doctorpage-photo-list-item">
+            <img src="./images/doc-2.jpg" alt="Doctor 2" />
+          </li>
+          <li class="doctorpage-photo-list-item">
+            <img src="./images/doc-3.jpg" alt="Doctor 3" />
+          </li>
+        </ul>
+      </section>
+      <section class="paymentspage">
+        <h2 id="pay" class="paymentspage-title">Послуги та вартість</h2>
+        <ul class="paymentspage-list">
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Педіатрія</p>
+          </li>
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Вакцинація</p>
+          </li>
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Ортопед</p>
+          </li>
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Гастроентеролог</p>
+          </li>
+          <li>
+            <p class="paymentspage-list-text">Стоматолог</p>
+          </li>
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Невролог</p>
+          </li>
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Кардіолог</p>
+          </li>
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Уролог</p>
+          </li>
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Лабораторія</p>
+          </li>
+          <li class="paymentspage-list-item">
+            <p class="paymentspage-list-text">Дивитись ще</p>
+          </li>
+        </ul>
+      </section>
+      <section class="questionspage">
+        <h2 id="questions" class="questionspage-title">Питання-відповідь</h2>
+        <ul class="questionspage-list">
+          <li class="questionspage-list-item">Загальні питання</li>
+          <li class="questionspage-list-item">Реєстрація та вхід</li>
+          <li class="questionspage-list-item">Вакцинація</li>
+          <li class="questionspage-list-item">Відео-консультація</li>
+        </ul>
+        <ol class="questionspage-list-ordered">
+          <li class="questionspage-list-ordered-item">
+            Як записатись до лікаря самостійно?
+          </li>
+          <li class="questionspage-list-ordered-item">
+            Як записатись до лікаря за направленням?
+          </li>
+          <li class="questionspage-list-ordered-item">Як скасувати запис?</li>
+          <li class="questionspage-list-ordered-item">
+            Як переглянути запис на прийом?
+          </li>
+          <li class="questionspage-list-ordered-item">
+            Як залишити відгук про лікаря?
+          </li>
+          <li class="questionspage-list-ordered-item">
+            Як змінити особисті дані?
+          </li>
         </ol>
       </section>
-      <section>
-        <h2 id="response">Що говорять наші клієнти</h2>
-        <ul>
-          <li>
+      <section class="responsepage">
+        <h2 id="response" class="responsepage-title">
+          Що говорять наші клієнти
+        </h2>
+        <ul class="responsepage-list">
+          <li class="responsepage-list-item">
             <img src="./images/response-1(2).jpg" alt="the first client" />
-            <p>
+            <p class="responsepage-list-text">
               Записалася до лікаря через сайт, мені передзвонили, щоб
               підтвердити запис. Розмовляли ввічливо і відповіли на всі мої
               запитання про прийом. Це дуже зручно, мені сподобалось.
             </p>
           </li>
-          <li>
+          <li class="responsepage-list-item">
             <img src="./images/response-2(2).jpg" alt="the second client" />
-            <p>
+            <p class="responsepage-list-text">
               Звернулась за допомогою у Евіденс, і отримала чудовий результат.
               Провели відео-консультацію, я отримала всі відповіді на питання.
               Дуже зручно!
@@ -154,48 +208,73 @@
         />
       </section>
     </main>
-    <footer>
-      <address id="contacts">
-        <ul>
-          <li>
-            <p>Адреса:</p>
-            м.Львів, проспект Відродження, 121
+
+    <footer class="footer">
+      <address id="contacts" class="address">
+        <ul class="address-list">
+          <li class="address-list-item">
+            <p class="address-list-item-text">Адреса:</p>
+            <a href="" class="address-list-item-link"
+              >м.Львів, проспект Відродження, 121</a
+            >
           </li>
-          <li>
-            <p>Email:</p>
-            <a href="mailto:evidence.ua@gmail.com">evidence.ua@gmail.com</a>
+          <li class="address-list-item">
+            <p class="address-list-item-text">Email:</p>
+            <a
+              href="mailto:evidence.ua@gmail.com"
+              class="address-list-item-link"
+              >evidence.ua@gmail.com</a
+            >
           </li>
-          <li>
-            <p>Телефон:</p>
-            <a href="tel:+8000000000">(800) 000 00 00</a>
+          <li class="address-list-item">
+            <p class="address-list-item-text">Телефон:</p>
+            <a href="tel:+8000000000" class="address-list-item-link"
+              >(800) 000 00 00</a
+            >
           </li>
         </ul>
       </address>
-      <p>Наша клініка</p>
-      <ul>
-        <li>більше 10 років турбуємось про Ваше здоров'я</li>
-        <li>клініка для дітей</li>
-        <li>найбільший медичний центр в області</li>
-        <li>широкий спектр послуг</li>
-        <li>всі види щеплень</li>
+      <p class="footer-info">Наша клініка</p>
+      <ul class="footer-info-list">
+        <li class="footer-info-list-item">
+          більше 10 років турбуємось про Ваше здоров'я
+        </li>
+        <li class="footer-info-list-item">клініка для дітей</li>
+        <li class="footer-info-list-item">
+          найбільший медичний центр в області
+        </li>
+        <li class="footer-info-list-item">широкий спектр послуг</li>
+        <li class="footer-info-list-item">всі види щеплень</li>
       </ul>
-      <p>Навігація</p>
-      <ul>
-        <li><a href="#navigation">Головна</a></li>
-        <li><a href="#about">Про клініку</a></li>
-        <li><a href="#doctors">Лікарі</a></li>
-        <li><a href="#pay">Послуги</a></li>
-        <li><a href="#questions">FAQ</a></li>
-        <li><a href="#response">Відгуки</a></li>
+      <p class="footer-nav">Навігація</p>
+      <ul class="footer-nav-list">
+        <li class="footer-nav-list-item">
+          <a href="#navigation" class="footer-nav-list-link">Головна</a>
+        </li>
+        <li class="footer-nav-list-item">
+          <a href="#about" class="footer-nav-list-link">Про клініку</a>
+        </li>
+        <li class="footer-nav-list-item">
+          <a href="#doctors" class="footer-nav-list-link">Лікарі</a>
+        </li>
+        <li class="footer-nav-list-item">
+          <a href="#pay" class="footer-nav-list-link">Послуги</a>
+        </li>
+        <li class="footer-nav-list-item">
+          <a href="#questions" class="footer-nav-list-link">FAQ</a>
+        </li>
+        <li class="footer-nav-list-item">
+          <a href="#response" class="footer-nav-list-link">Відгуки</a>
+        </li>
       </ul>
-      <p>Наші послуги</p>
-      <ul>
-        <li>Педіатрія</li>
-        <li>Щеплення</li>
-        <li>Діагностика</li>
-        <li>Вузькі спеціалісти</li>
-        <li>Стоматологія</li>
-        <li>Лабораторія</li>
+      <p class="footer-service">Наші послуги</p>
+      <ul class="footer-service-list">
+        <li class="footer-service-list-item">Педіатрія</li>
+        <li class="footer-service-list-item">Щеплення</li>
+        <li class="footer-service-list-item">Діагностика</li>
+        <li class="footer-service-list-item">Вузькі спеціалісти</li>
+        <li class="footer-service-list-item">Стоматологія</li>
+        <li class="footer-service-list-item">Лабораторія</li>
       </ul>
     </footer>
   </body>
