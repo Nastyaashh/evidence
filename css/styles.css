@@ -1,0 +1,226 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: ECEFF7;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-menu-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 220%;
+  color: #3a3b3d;
+}
+.header-menu-link-about {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 220%;
+  color: #2887d9;
+}
+
+/* Hero */
+
+.hero-title {
+  font-weight: 300;
+  font-size: 140px;
+  line-height: 46%;
+  color: #2887d9;
+}
+.hero-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 183%;
+  color: #2887d9;
+}
+.hero-button {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 137%;
+  color: #fff;
+}
+
+.hero-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: #3a3b3d;
+}
+
+/* Section 'about' */
+
+.about-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92%;
+  color: #2887d9;
+}
+.about-list-title-1 {
+  font-weight: 300;
+  font-size: 113px;
+  text-align: center;
+  color: #edbbd6;
+}
+.about-list-title-2 {
+  font-weight: 300;
+  font-size: 106px;
+  text-align: center;
+  color: #72b7f2;
+}
+.about-list-title-3 {
+  font-weight: 300;
+  font-size: 106px;
+  text-align: center;
+  color: #58d7d0;
+}
+.about-list-title-4 {
+  font-weight: 300;
+  font-size: 106px;
+  text-align: center;
+  color: #facf4f;
+}
+.about-list-text {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  color: #2887d9;
+}
+
+/* Doctorpage */
+
+.doctorpage-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92%;
+  color: #2887d9;
+}
+.doctorpage-list-title {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 46%;
+  color: #d1a4bc;
+}
+.doctorpage-list-text {
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #2887d9;
+}
+.doctorpage-button {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 137%;
+  color: #fff;
+}
+
+/* paymentspage */
+
+.paymentspage-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92%;
+  color: #2887d9;
+}
+.paymentspage-list-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 183%;
+  color: #2887d9;
+}
+
+/* questionspage */
+.questionspage-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92%;
+  color: #2887d9;
+}
+.questionspage-list-item {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 137%;
+  color: #3a3b3d;
+}
+.questionspage-list-ordered-item {
+  font-weight: 600;
+  font-size: 32px;
+  color: #2887d9;
+}
+
+/* responsepage */
+
+.responsepage-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92%;
+  color: #2887d9;
+}
+.responsepage-list-text {
+  font-weight: 400;
+  font-size: 32px;
+  color: #3a3b3d;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* footer */
+.address-list-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2887d9;
+  font-style: normal;
+}
+.address-list-item-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3a3b3d;
+  font-style: normal;
+}
+.footer-info {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2887d9;
+}
+.footer-info-list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3a3b3d;
+}
+.footer-nav {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2887d9;
+}
+.footer-nav-list-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2887d9;
+}
+.footer-service {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2887d9;
+}
+.footer-service-list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2887d9;
+}
