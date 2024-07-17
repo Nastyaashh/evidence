@@ -11,17 +11,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <header class="header">
       <nav class="header-navigation">
         <a href="./index.html" class="header-logo"
-          >Evidence. Сучасна педіатрія</a
-        >
+          ><img src="./images/Evidence-title-1.svg" alt="Evidence-title" />
+          <img src="./images/Evidence-title-2.svg" alt="Evidence-title"
+        /></a>
         <ul id="navigation" class="header-menu-list">
           <li class="header-menu-item">
-            <a href="#info" class="header-menu-link-about">Про нас</a>
+            <a href="#info" class="header-menu-link">Про нас</a>
           </li>
           <li class="header-menu-item">
             <a href="#doctors" class="header-menu-link">Лікарі</a>
@@ -45,6 +53,7 @@
               alt="login-icon"
               width="42"
               height="42"
+              class="header-menu-image"
             />
           </li>
         </ul>
@@ -57,7 +66,9 @@
         <p class="hero-text">
           Територія сучасної педіатрії - доказ нашої любові
         </p>
-        <button type="button" class="hero-button">Записатись на прийом</button>
+        <button type="button" class="hero-button primary-button">
+          Записатись на прийом
+        </button>
         <ul class="hero-list">
           <li class="hero-list-item">
             <a href="" class="hero-list-link"></a>З’єднаємо зараз
@@ -103,52 +114,86 @@
             <p class="doctorpage-list-text">середній стаж</p>
           </li>
         </ul>
-        <button type="button" class="doctorpage-button">Знайти лікаря</button>
+        <button type="button" class="doctorpage-button primary-button">
+          Знайти лікаря
+        </button>
         <ul class="doctorpage-photo-list">
           <li class="doctorpage-photo-list-item">
-            <img src="./images/doc-1.jpg" alt="Doctor 1" />
+            <img
+              src="./images/doc-1.jpg"
+              alt="Doctor 1"
+              class="doctorpage-photo"
+            />
           </li>
           <li class="doctorpage-photo-list-item">
-            <img src="./images/doc-2.jpg" alt="Doctor 2" />
+            <img
+              src="./images/doc-2.jpg"
+              alt="Doctor 2"
+              class="doctorpage-photo"
+            />
           </li>
           <li class="doctorpage-photo-list-item">
-            <img src="./images/doc-3.jpg" alt="Doctor 3" />
+            <img
+              src="./images/doc-3.jpg"
+              alt="Doctor 3"
+              class="doctorpage-photo"
+            />
           </li>
         </ul>
       </section>
       <section class="paymentspage">
         <h2 id="pay" class="paymentspage-title">Послуги та вартість</h2>
         <ul class="paymentspage-list">
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Педіатрія</p>
-          </li>
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Вакцинація</p>
-          </li>
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Ортопед</p>
-          </li>
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Гастроентеролог</p>
-          </li>
-          <li>
-            <p class="paymentspage-list-text">Стоматолог</p>
-          </li>
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Невролог</p>
-          </li>
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Кардіолог</p>
-          </li>
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Уролог</p>
-          </li>
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Лабораторія</p>
-          </li>
-          <li class="paymentspage-list-item">
-            <p class="paymentspage-list-text">Дивитись ще</p>
-          </li>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Педіатрія</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Вакцинація</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Ортопед</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Гастроентеролог</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Стоматолог</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Невролог</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Кардіолог</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Уролог</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Лабораторія</p>
+            </li>
+          </div>
+          <div class="paymentspage-list-item">
+            <li>
+              <p class="paymentspage-list-text">Дивитись ще</p>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="questionspage">
@@ -184,7 +229,11 @@
         </h2>
         <ul class="responsepage-list">
           <li class="responsepage-list-item">
-            <img src="./images/response-1(2).jpg" alt="the first client" />
+            <img
+              src="./images/response-1(2).jpg"
+              alt="the first client"
+              class="responsepage-list-photo"
+            />
             <p class="responsepage-list-text">
               Записалася до лікаря через сайт, мені передзвонили, щоб
               підтвердити запис. Розмовляли ввічливо і відповіли на всі мої
@@ -192,7 +241,11 @@
             </p>
           </li>
           <li class="responsepage-list-item">
-            <img src="./images/response-2(2).jpg" alt="the second client" />
+            <img
+              src="./images/response-2(2).jpg"
+              alt="the second client"
+              class="responsepage-list-photo"
+            />
             <p class="responsepage-list-text">
               Звернулась за допомогою у Евіденс, і отримала чудовий результат.
               Провели відео-консультацію, я отримала всі відповіді на питання.
@@ -205,6 +258,7 @@
           alt="clients"
           width="743"
           height="731"
+          class="responsepage-photo"
         />
       </section>
     </main>
@@ -249,22 +303,34 @@
       <p class="footer-nav">Навігація</p>
       <ul class="footer-nav-list">
         <li class="footer-nav-list-item">
-          <a href="#navigation" class="footer-nav-list-link">Головна</a>
+          <a href="#navigation" class="footer-nav-list-link footer-nav-text"
+            >Головна</a
+          >
         </li>
         <li class="footer-nav-list-item">
-          <a href="#about" class="footer-nav-list-link">Про клініку</a>
+          <a href="#about" class="footer-nav-list-link footer-nav-text"
+            >Про клініку</a
+          >
         </li>
         <li class="footer-nav-list-item">
-          <a href="#doctors" class="footer-nav-list-link">Лікарі</a>
+          <a href="#doctors" class="footer-nav-list-link footer-nav-text"
+            >Лікарі</a
+          >
         </li>
         <li class="footer-nav-list-item">
-          <a href="#pay" class="footer-nav-list-link">Послуги</a>
+          <a href="#pay" class="footer-nav-list-link footer-nav-text"
+            >Послуги</a
+          >
         </li>
         <li class="footer-nav-list-item">
-          <a href="#questions" class="footer-nav-list-link">FAQ</a>
+          <a href="#questions" class="footer-nav-list-link footer-nav-text"
+            >FAQ</a
+          >
         </li>
         <li class="footer-nav-list-item">
-          <a href="#response" class="footer-nav-list-link">Відгуки</a>
+          <a href="#response" class="footer-nav-list-link footer-nav-text"
+            >Відгуки</a
+          >
         </li>
       </ul>
       <p class="footer-service">Наші послуги</p>

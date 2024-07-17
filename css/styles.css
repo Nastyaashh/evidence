@@ -1,5 +1,9 @@
 :root {
   --font-family: "Montserrat", sans-serif;
+  --background-color-button: #72b7f2;
+  --background-color-button-pseudo: #2887d9;
+  --color-accent: #2887d9;
+  --primary-text-color: #3a3b3d;
 }
 
 body {
@@ -18,209 +22,270 @@ a {
 /* Header */
 
 .header-menu-link {
-  font-weight: 400;
   font-size: 20px;
   line-height: 220%;
-  color: #3a3b3d;
+  color: var(--primary-text-color);
 }
-.header-menu-link-about {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 220%;
-  color: #2887d9;
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--background-color-button-pseudo);
+}
+
+.header-menu-image {
 }
 
 /* Hero */
 
 .hero-title {
   font-weight: 300;
-  font-size: 140px;
+  font-size: 99px;
   line-height: 46%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .hero-text {
-  font-weight: 400;
-  font-size: 24px;
+  font-size: 17px;
   line-height: 183%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .hero-button {
-  font-weight: 400;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 137%;
   color: #fff;
+  cursor: pointer;
+  background-color: var(--background-color-button);
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background-color: var(--background-color-button-pseudo);
+  box-shadow: 0 4px 32px 0 rgba(35, 63, 119, 0.5);
 }
 
 .hero-list-link {
-  font-weight: 400;
-  font-size: 14px;
+  font-size: 9px;
   line-height: 129%;
-  color: #3a3b3d;
+  color: var(--primary-text-color);
 }
 
 /* Section 'about' */
 
 .about-text {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 34px;
   line-height: 92%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .about-list-title-1 {
   font-weight: 300;
   font-size: 113px;
   text-align: center;
   color: #edbbd6;
 }
+
 .about-list-title-2 {
   font-weight: 300;
   font-size: 106px;
   text-align: center;
-  color: #72b7f2;
+  color: var(--color-accent);
 }
+
 .about-list-title-3 {
   font-weight: 300;
   font-size: 106px;
   text-align: center;
   color: #58d7d0;
 }
+
 .about-list-title-4 {
   font-weight: 300;
   font-size: 106px;
   text-align: center;
   color: #facf4f;
 }
+
 .about-list-text {
-  font-weight: 400;
   font-size: 22px;
   text-align: center;
-  color: #2887d9;
+  color: var(--color-accent);
 }
 
 /* Doctorpage */
 
 .doctorpage-title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 34px;
   line-height: 92%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .doctorpage-list-title {
-  font-weight: 400;
-  font-size: 96px;
+  font-size: 68px;
   line-height: 46%;
   color: #d1a4bc;
 }
+
 .doctorpage-list-text {
-  font-weight: 400;
-  font-size: 32px;
+  font-size: 22px;
   text-align: center;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .doctorpage-button {
-  font-weight: 400;
   font-size: 32px;
   line-height: 137%;
   color: #fff;
+  cursor: pointer;
+  background-color: var(--background-color-button);
+}
+
+.doctorpage-photo {
 }
 
 /* paymentspage */
 
 .paymentspage-title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 34px;
   line-height: 92%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .paymentspage-list-text {
-  font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 183%;
-  color: #2887d9;
+  color: var(--color-accent);
+}
+
+.paymentspage-list-item {
+  display: inline-block;
+  margin-bottom: 54px;
+  background-color: #cef2f0;
+  border-radius: 50px;
+  width: 270px;
+  height: 270px;
+}
+
+.paymentspage-list-item:hover,
+.paymentspage-list-item:focus {
+  box-shadow: 0 6px 23px 0 rgba(0, 0, 0, 0.12);
+  background: #f3dcdc;
+}
+
+.paymentspage-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* questionspage */
+
 .questionspage-title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 34px;
   line-height: 92%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .questionspage-list-item {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 137%;
-  color: #3a3b3d;
+  color: var(--primary-text-color);
 }
+
+.questionspage-list-item:hover,
+.questionspage-list-item:focus {
+  color: var(--background-color-button-pseudo);
+}
+
 .questionspage-list-ordered-item {
   font-weight: 600;
-  font-size: 32px;
-  color: #2887d9;
+  font-size: 22px;
+  color: var(--color-accent);
 }
 
 /* responsepage */
 
 .responsepage-title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 34px;
   line-height: 92%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .responsepage-list-text {
-  font-weight: 400;
-  font-size: 32px;
-  color: #3a3b3d;
+  font-size: 22px;
+  color: var(--primary-text-color);
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* footer */
+.responsepage-list-photo {
+}
+
+.responsepage-photo {
+}
+
+/* FOOTER */
+
 .address-list-item-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #2887d9;
+  color: var(--color-accent);
   font-style: normal;
 }
+
 .address-list-item-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #3a3b3d;
+  color: var(--primary-text-color);
   font-style: normal;
 }
+
 .footer-info {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .footer-info-list-item {
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #3a3b3d;
+  color: var(--primary-text-color);
 }
+
 .footer-nav {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .footer-nav-list-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #2887d9;
+  color: var(--primary-text-color);
 }
+
 .footer-service {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  color: #2887d9;
+  color: var(--color-accent);
 }
+
 .footer-service-list-item {
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #2887d9;
+  color: var(--primary-text-color);
+}
+
+.footer-nav-text:hover,
+.footer-nav-text:focus {
+  color: var(--color-accent);
 }
