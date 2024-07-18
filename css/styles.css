@@ -4,22 +4,39 @@
   --background-color-button-pseudo: #2887d9;
   --color-accent: #2887d9;
   --primary-text-color: #3a3b3d;
+  --background-color: #eceff7;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: ECEFF7;
+  background-color: var(--background-color);
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* Header */
+
+.header {
+  background: linear-gradient(180deg, #f0ebeb 0%, #eceff7 100%);
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
 
 .header-menu-link {
   font-size: 20px;
@@ -37,17 +54,27 @@ a {
 
 /* Hero */
 
+.hero {
+}
+
+.hero-list {
+  display: flex;
+  gap: 138px;
+}
+
 .hero-title {
   font-weight: 300;
   font-size: 99px;
   line-height: 46%;
   color: var(--color-accent);
+  margin-bottom: 35px;
 }
 
 .hero-text {
   font-size: 17px;
   line-height: 183%;
   color: var(--color-accent);
+  margin-bottom: 80px;
 }
 
 .hero-button {
@@ -68,6 +95,9 @@ a {
   font-size: 9px;
   line-height: 129%;
   color: var(--primary-text-color);
+}
+
+.hero-photo {
 }
 
 /* Section 'about' */
@@ -122,8 +152,14 @@ a {
   color: var(--color-accent);
 }
 
+.doctorpage-list {
+  display: flex;
+  gap: 68px;
+}
+
 .doctorpage-list-title {
-  font-size: 68px;
+  font-weight: 400;
+  font-size: 96px;
   line-height: 46%;
   color: #d1a4bc;
 }
@@ -135,11 +171,17 @@ a {
 }
 
 .doctorpage-button {
-  font-size: 32px;
+  font-size: 22px;
   line-height: 137%;
   color: #fff;
   cursor: pointer;
   background-color: var(--background-color-button);
+}
+
+.doctorpage-accent {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
 }
 
 .doctorpage-photo {
@@ -167,12 +209,28 @@ a {
   border-radius: 50px;
   width: 270px;
   height: 270px;
+  border: 1px solid #72b7f2;
+  border-radius: 50px;
+}
+
+.paymentspage-list-item-last {
+  border: 1px solid #72b7f2;
+  border-radius: 50px;
+  width: 270px;
+  height: 270px;
+  background-color: var(--background-color);
 }
 
 .paymentspage-list-item:hover,
 .paymentspage-list-item:focus {
   box-shadow: 0 6px 23px 0 rgba(0, 0, 0, 0.12);
   background: #f3dcdc;
+  border: 2px solid var(--background-color-button-pseudo);
+}
+
+.paymentspage-list-item-last:hover,
+.paymentspage-list-item-last:focus {
+  border: 2px solid var(--background-color-button-pseudo);
 }
 
 .paymentspage-list {
@@ -224,6 +282,22 @@ a {
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.responsepage-list-item {
+  display: flex;
+}
+
+.responsepage-list-text-container {
+  background-color: #f2f3f5;
+  border: 1px solid var(--background-color-button);
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+
+.responsepage-container {
+  display: flex;
+  gap: 60px;
+}
+
 .responsepage-list-photo {
 }
 
@@ -231,6 +305,11 @@ a {
 }
 
 /* FOOTER */
+
+.address-list {
+  display: flex;
+  gap: 140px;
+}
 
 .address-list-item-text {
   font-size: 16px;

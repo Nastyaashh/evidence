@@ -80,6 +80,12 @@
             <a href="" class="hero-list-link"></a>Вартість 400 грн
           </li>
         </ul>
+        <img
+          src="./images/hero-photo.png"
+          alt="hero-photo"
+          class="hero-photo"
+          width="500"
+        />
       </section>
       <section class="about">
         <h2 id="info" class="about-text">Про клініку в цифрах (2022)</h2>
@@ -110,7 +116,9 @@
             <p class="doctorpage-list-text">досвідчених лікарів</p>
           </li>
           <li class="doctorpage-list-item">
-            <h3 class="doctorpage-list-title">35 років</h3>
+            <h3 class="doctorpage-list-title">
+              35 <span class="doctorpage-accent">років</span>
+            </h3>
             <p class="doctorpage-list-text">середній стаж</p>
           </li>
         </ul>
@@ -120,21 +128,21 @@
         <ul class="doctorpage-photo-list">
           <li class="doctorpage-photo-list-item">
             <img
-              src="./images/doc-1.jpg"
+              src="./images/doc-1.png"
               alt="Doctor 1"
               class="doctorpage-photo"
             />
           </li>
           <li class="doctorpage-photo-list-item">
             <img
-              src="./images/doc-2.jpg"
+              src="./images/doc-2.png"
               alt="Doctor 2"
               class="doctorpage-photo"
             />
           </li>
           <li class="doctorpage-photo-list-item">
             <img
-              src="./images/doc-3.jpg"
+              src="./images/doc-3.png"
               alt="Doctor 3"
               class="doctorpage-photo"
             />
@@ -189,7 +197,7 @@
               <p class="paymentspage-list-text">Лабораторія</p>
             </li>
           </div>
-          <div class="paymentspage-list-item">
+          <div class="paymentspage-list-item-last">
             <li>
               <p class="paymentspage-list-text">Дивитись ще</p>
             </li>
@@ -227,39 +235,49 @@
         <h2 id="response" class="responsepage-title">
           Що говорять наші клієнти
         </h2>
-        <ul class="responsepage-list">
-          <li class="responsepage-list-item">
-            <img
-              src="./images/response-1(2).jpg"
-              alt="the first client"
-              class="responsepage-list-photo"
-            />
-            <p class="responsepage-list-text">
-              Записалася до лікаря через сайт, мені передзвонили, щоб
-              підтвердити запис. Розмовляли ввічливо і відповіли на всі мої
-              запитання про прийом. Це дуже зручно, мені сподобалось.
-            </p>
-          </li>
-          <li class="responsepage-list-item">
-            <img
-              src="./images/response-2(2).jpg"
-              alt="the second client"
-              class="responsepage-list-photo"
-            />
-            <p class="responsepage-list-text">
-              Звернулась за допомогою у Евіденс, і отримала чудовий результат.
-              Провели відео-консультацію, я отримала всі відповіді на питання.
-              Дуже зручно!
-            </p>
-          </li>
-        </ul>
-        <img
-          src="./images/clients-min.png"
-          alt="clients"
-          width="743"
-          height="731"
-          class="responsepage-photo"
-        />
+        <div class="responsepage-container">
+          <ul class="responsepage-list">
+            <li class="responsepage-list-item">
+              <img
+                src="./images/response-1.png"
+                alt="the first client"
+                class="responsepage-list-photo"
+                width="189"
+                height="193"
+              />
+              <div class="responsepage-list-text-container">
+                <p class="responsepage-list-text">
+                  Записалася до лікаря через сайт, мені передзвонили, щоб
+                  підтвердити запис. Розмовляли ввічливо і відповіли на всі мої
+                  запитання про прийом. Це дуже зручно, мені сподобалось.
+                </p>
+              </div>
+            </li>
+            <li class="responsepage-list-item">
+              <img
+                src="./images/response-2.png"
+                alt="the second client"
+                class="responsepage-list-photo"
+                width="189"
+                height="193"
+              />
+              <div class="responsepage-list-text-container">
+                <p class="responsepage-list-text">
+                  Звернулась за допомогою у Евіденс, і отримала чудовий
+                  результат. Провели відео-консультацію, я отримала всі
+                  відповіді на питання. Дуже зручно!
+                </p>
+              </div>
+            </li>
+          </ul>
+          <img
+            src="./images/clients-min.png"
+            alt="clients"
+            width="743"
+            height="731"
+            class="responsepage-photo"
+          />
+        </div>
       </section>
     </main>
 
@@ -288,60 +306,62 @@
           </li>
         </ul>
       </address>
-      <p class="footer-info">Наша клініка</p>
-      <ul class="footer-info-list">
-        <li class="footer-info-list-item">
-          більше 10 років турбуємось про Ваше здоров'я
-        </li>
-        <li class="footer-info-list-item">клініка для дітей</li>
-        <li class="footer-info-list-item">
-          найбільший медичний центр в області
-        </li>
-        <li class="footer-info-list-item">широкий спектр послуг</li>
-        <li class="footer-info-list-item">всі види щеплень</li>
-      </ul>
-      <p class="footer-nav">Навігація</p>
-      <ul class="footer-nav-list">
-        <li class="footer-nav-list-item">
-          <a href="#navigation" class="footer-nav-list-link footer-nav-text"
-            >Головна</a
-          >
-        </li>
-        <li class="footer-nav-list-item">
-          <a href="#about" class="footer-nav-list-link footer-nav-text"
-            >Про клініку</a
-          >
-        </li>
-        <li class="footer-nav-list-item">
-          <a href="#doctors" class="footer-nav-list-link footer-nav-text"
-            >Лікарі</a
-          >
-        </li>
-        <li class="footer-nav-list-item">
-          <a href="#pay" class="footer-nav-list-link footer-nav-text"
-            >Послуги</a
-          >
-        </li>
-        <li class="footer-nav-list-item">
-          <a href="#questions" class="footer-nav-list-link footer-nav-text"
-            >FAQ</a
-          >
-        </li>
-        <li class="footer-nav-list-item">
-          <a href="#response" class="footer-nav-list-link footer-nav-text"
-            >Відгуки</a
-          >
-        </li>
-      </ul>
-      <p class="footer-service">Наші послуги</p>
-      <ul class="footer-service-list">
-        <li class="footer-service-list-item">Педіатрія</li>
-        <li class="footer-service-list-item">Щеплення</li>
-        <li class="footer-service-list-item">Діагностика</li>
-        <li class="footer-service-list-item">Вузькі спеціалісти</li>
-        <li class="footer-service-list-item">Стоматологія</li>
-        <li class="footer-service-list-item">Лабораторія</li>
-      </ul>
+      <div class="footer-container">
+        <p class="footer-info">Наша клініка</p>
+        <ul class="footer-info-list">
+          <li class="footer-info-list-item">
+            більше 10 років турбуємось про Ваше здоров'я
+          </li>
+          <li class="footer-info-list-item">клініка для дітей</li>
+          <li class="footer-info-list-item">
+            найбільший медичний центр в області
+          </li>
+          <li class="footer-info-list-item">широкий спектр послуг</li>
+          <li class="footer-info-list-item">всі види щеплень</li>
+        </ul>
+        <p class="footer-nav">Навігація</p>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-list-item">
+            <a href="#navigation" class="footer-nav-list-link footer-nav-text"
+              >Головна</a
+            >
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="#about" class="footer-nav-list-link footer-nav-text"
+              >Про клініку</a
+            >
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="#doctors" class="footer-nav-list-link footer-nav-text"
+              >Лікарі</a
+            >
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="#pay" class="footer-nav-list-link footer-nav-text"
+              >Послуги</a
+            >
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="#questions" class="footer-nav-list-link footer-nav-text"
+              >FAQ</a
+            >
+          </li>
+          <li class="footer-nav-list-item">
+            <a href="#response" class="footer-nav-list-link footer-nav-text"
+              >Відгуки</a
+            >
+          </li>
+        </ul>
+        <p class="footer-service">Наші послуги</p>
+        <ul class="footer-service-list">
+          <li class="footer-service-list-item">Педіатрія</li>
+          <li class="footer-service-list-item">Щеплення</li>
+          <li class="footer-service-list-item">Діагностика</li>
+          <li class="footer-service-list-item">Вузькі спеціалісти</li>
+          <li class="footer-service-list-item">Стоматологія</li>
+          <li class="footer-service-list-item">Лабораторія</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
