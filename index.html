@@ -22,10 +22,13 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo"
-            ><img src="./images/Evidence-title-1.svg" alt="Evidence-title" />
+            ><img
+              src="./images/Evidence-title-1.svg"
+              alt="Evidence-title"
+              class="logo-photo" />
             <img src="./images/Evidence-title-2.svg" alt="Evidence-title"
           /></a>
           <ul id="navigation" class="header-menu-list">
@@ -98,25 +101,25 @@
             <ul class="about-list">
               <div class="about-list-item-container pations">
                 <li class="about-list-item">
-                  <h3 class="about-list-title-1">13 370</h3>
+                  <h3 class="about-list-title first">13 370</h3>
                   <p class="about-list-text">щасливих пацієнтів</p>
                 </li>
               </div>
               <div class="about-list-item-container vacinations">
                 <li class="about-list-item">
-                  <h3 class="about-list-title-2">568</h3>
+                  <h3 class="about-list-title second">568</h3>
                   <p class="about-list-text">вакцинацій</p>
                 </li>
               </div>
               <div class="about-list-item-container research">
                 <li class="about-list-item">
-                  <h3 class="about-list-title-3">1 247</h3>
+                  <h3 class="about-list-title third">1 247</h3>
                   <p class="about-list-text">лабораторних досліджень</p>
                 </li>
               </div>
               <div class="about-list-item-container care">
                 <li class="about-list-item">
-                  <h3 class="about-list-title-4">+10</h3>
+                  <h3 class="about-list-title fourth">+10</h3>
                   <p class="about-list-text">років турботи про Ваших малят</p>
                 </li>
               </div>
@@ -220,7 +223,7 @@
                 <p class="paymentspage-list-text">Лабораторія</p>
               </li>
             </div>
-            <div class="paymentspage-list-item-last">
+            <div class="paymentspage-list-item last">
               <li>
                 <p class="paymentspage-list-text">Дивитись ще</p>
               </li>
@@ -342,60 +345,79 @@
           </ul>
         </address>
         <div class="footer-container">
-          <p class="footer-info">Наша клініка</p>
-          <ul class="footer-info-list">
-            <li class="footer-info-list-item">
-              більше 10 років турбуємось про Ваше здоров'я
-            </li>
-            <li class="footer-info-list-item">клініка для дітей</li>
-            <li class="footer-info-list-item">
-              найбільший медичний центр в області
-            </li>
-            <li class="footer-info-list-item">широкий спектр послуг</li>
-            <li class="footer-info-list-item">всі види щеплень</li>
-          </ul>
-          <p class="footer-nav">Навігація</p>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-list-item">
-              <a href="#navigation" class="footer-nav-list-link footer-nav-text"
-                >Головна</a
-              >
-            </li>
-            <li class="footer-nav-list-item">
-              <a href="#about" class="footer-nav-list-link footer-nav-text"
-                >Про клініку</a
-              >
-            </li>
-            <li class="footer-nav-list-item">
-              <a href="#doctors" class="footer-nav-list-link footer-nav-text"
-                >Лікарі</a
-              >
-            </li>
-            <li class="footer-nav-list-item">
-              <a href="#pay" class="footer-nav-list-link footer-nav-text"
-                >Послуги</a
-              >
-            </li>
-            <li class="footer-nav-list-item">
-              <a href="#questions" class="footer-nav-list-link footer-nav-text"
-                >FAQ</a
-              >
-            </li>
-            <li class="footer-nav-list-item">
-              <a href="#response" class="footer-nav-list-link footer-nav-text"
-                >Відгуки</a
-              >
-            </li>
-          </ul>
-          <p class="footer-service">Наші послуги</p>
-          <ul class="footer-service-list">
-            <li class="footer-service-list-item">Педіатрія</li>
-            <li class="footer-service-list-item">Щеплення</li>
-            <li class="footer-service-list-item">Діагностика</li>
-            <li class="footer-service-list-item">Вузькі спеціалісти</li>
-            <li class="footer-service-list-item">Стоматологія</li>
-            <li class="footer-service-list-item">Лабораторія</li>
-          </ul>
+          <div class="footer-info-logo">
+            <a href="./index.html" class="header-logo logo-footer"
+              ><img
+                src="./images/Evidence-title-1.svg"
+                alt="Evidence-title"
+                class="logo-photo" />
+              <img src="./images/Evidence-title-2.svg" alt="Evidence-title"
+            /></a>
+          </div>
+          <div class="footer-info-first">
+            <p class="footer-info">Наша клініка</p>
+            <ul class="footer-info-list">
+              <li class="footer-info-list-item">
+                більше 10 років турбуємось про Ваше здоров'я
+              </li>
+              <li class="footer-info-list-item">клініка для дітей</li>
+              <li class="footer-info-list-item">
+                найбільший медичний центр в області
+              </li>
+              <li class="footer-info-list-item">широкий спектр послуг</li>
+              <li class="footer-info-list-item">всі види щеплень</li>
+            </ul>
+          </div>
+          <div class="footer-info-second">
+            <p class="footer-nav">Навігація</p>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-list-item">
+                <a
+                  href="#navigation"
+                  class="footer-nav-list-link footer-nav-text"
+                  >Головна</a
+                >
+              </li>
+              <li class="footer-nav-list-item">
+                <a href="#about" class="footer-nav-list-link footer-nav-text"
+                  >Про клініку</a
+                >
+              </li>
+              <li class="footer-nav-list-item">
+                <a href="#doctors" class="footer-nav-list-link footer-nav-text"
+                  >Лікарі</a
+                >
+              </li>
+              <li class="footer-nav-list-item">
+                <a href="#pay" class="footer-nav-list-link footer-nav-text"
+                  >Послуги</a
+                >
+              </li>
+              <li class="footer-nav-list-item">
+                <a
+                  href="#questions"
+                  class="footer-nav-list-link footer-nav-text"
+                  >FAQ</a
+                >
+              </li>
+              <li class="footer-nav-list-item">
+                <a href="#response" class="footer-nav-list-link footer-nav-text"
+                  >Відгуки</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-info-third">
+            <p class="footer-service">Наші послуги</p>
+            <ul class="footer-service-list">
+              <li class="footer-service-list-item">Педіатрія</li>
+              <li class="footer-service-list-item">Щеплення</li>
+              <li class="footer-service-list-item">Діагностика</li>
+              <li class="footer-service-list-item">Вузькі спеціалісти</li>
+              <li class="footer-service-list-item">Стоматологія</li>
+              <li class="footer-service-list-item">Лабораторія</li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

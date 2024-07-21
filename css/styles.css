@@ -61,9 +61,18 @@ h6 {
   padding-bottom: 32px;
 }
 
+.header-navigation {
+  display: flex;
+}
+
+.logo-photo {
+  margin-bottom: 8px;
+}
+
 .header-menu-list {
-  /* display: flex;
-  gap: 40px; */
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
 }
 
 .header-menu-link {
@@ -142,31 +151,33 @@ h6 {
   margin-bottom: 50px;
 }
 
-.about-list-title-1 {
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-list-title {
   font-weight: 300;
-  font-size: 113px;
   text-align: center;
+}
+
+.first {
+  font-size: 113px;
   color: #edbbd6;
 }
 
-.about-list-title-2 {
-  font-weight: 300;
+.second {
   font-size: 106px;
-  text-align: center;
   color: var(--color-accent);
 }
 
-.about-list-title-3 {
-  font-weight: 300;
+.third {
   font-size: 106px;
-  text-align: center;
   color: #58d7d0;
 }
 
-.about-list-title-4 {
-  font-weight: 300;
+.fourth {
   font-size: 106px;
-  text-align: center;
   color: #facf4f;
 }
 
@@ -224,6 +235,8 @@ h6 {
 
 .doctorpage-list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 68px;
 }
 
@@ -292,23 +305,29 @@ h6 {
   text-align: center;
 }
 
+.paymentspage-list {
+  display: flex;
+}
+
 .paymentspage-list-item {
-  display: inline-block;
-  margin-bottom: 54px;
+  width: calc((100% - 4 * 65px) / 5);
+  margin-bottom: 38px;
   background-color: #cef2f0;
   border-radius: 50px;
-  width: 270px;
-  height: 270px;
+  /* max-width: 180px; */
+  max-height: 180px;
   border: 1px solid #72b7f2;
   border-radius: 50px;
 }
 
-.paymentspage-list-item-last {
+.last {
   border: 1px solid #72b7f2;
   border-radius: 50px;
   width: 270px;
   height: 270px;
   background-color: var(--background-color);
+  width: calc((100% - 4 * 65px) / 5);
+  max-height: 180px;
 }
 
 .paymentspage-list-item:hover,
@@ -443,6 +462,7 @@ h6 {
 .address-list {
   display: flex;
   gap: 140px;
+  margin-bottom: 14px;
 }
 
 .address-list-item-text {
@@ -457,6 +477,10 @@ h6 {
   line-height: 150%;
   color: var(--primary-text-color);
   font-style: normal;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer-info {
