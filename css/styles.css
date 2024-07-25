@@ -192,7 +192,7 @@ h6 {
   color: var(--color-accent);
 }
 
-.about-list-item-container {
+.about-list-item {
   border-radius: 40px 0 0 0;
   width: 620px;
   height: 280px;
