@@ -88,9 +88,13 @@ h6 {
 
 /* Hero */
 
-.hero {
-  padding-top: 200px;
-  /* padding-bottom: 60px; */
+.hero-section {
+  display: flex;
+  align-items: center;
+}
+
+.hero-container-second {
+  margin-left: auto;
 }
 
 .hero-list {
@@ -159,6 +163,7 @@ h6 {
 .about-list-title {
   font-weight: 300;
   text-align: center;
+  padding-top: 50px;
 }
 
 .first {
@@ -459,6 +464,10 @@ h6 {
   /* width: 1920px;  */
 }
 
+.address {
+  margin-bottom: 38px;
+}
+
 .address-list {
   display: flex;
   gap: 140px;
@@ -481,6 +490,23 @@ h6 {
 
 .footer-container {
   display: flex;
+}
+
+.footer-info-logo {
+  margin-right: 134px;
+}
+
+.footer-info-first {
+  margin-right: 205px;
+  min-width: 418px;
+}
+
+.footer-info-second {
+  margin-right: 345px;
+}
+
+.footer-info-third {
+  min-width: 142px;
 }
 
 .footer-info {
