@@ -24,13 +24,17 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="header-logo"
-            ><img
+          <a href="./index.html" class="header-logo">
+            <!-- <svg class="logo-icon">
+              <use href="./images/symbol-defs.svg#icon-Mask-group"></use>
+            </svg> -->
+            <img
               src="./images/Evidence-title-1.svg"
               alt="Evidence-title"
-              class="logo-photo" />
-            <img src="./images/Evidence-title-2.svg" alt="Evidence-title"
-          /></a>
+              class="logo-photo"
+            />
+            <img src="./images/Evidence-title-2.svg" alt="Evidence-title" />
+          </a>
           <ul id="navigation" class="header-menu-list">
             <li class="header-menu-item">
               <a href="#info" class="header-menu-link">Про нас</a>
@@ -51,13 +55,9 @@
               <a href="#contacts" class="header-menu-link">Контакти</a>
             </li>
             <li class="header-menu-item">
-              <img
-                class="header-menu-link"
-                src="./images/login.svg"
-                alt="login-icon"
-                width="42"
-                height="42"
-              />
+              <svg class="header-menu-link" width="42" height="42">
+                <use href="./images/symbol-defs.svg#icon-login"></use>
+              </svg>
             </li>
           </ul>
         </nav>
@@ -77,23 +77,42 @@
             </button>
             <ul class="hero-list">
               <li class="hero-list-item">
-                <a href="" class="hero-list-link"></a>З’єднаємо зараз
+                <a href="" class="hero-list-link">
+                  <svg class="hero-list-icon" width="42" height="42">
+                    <use href="./images/symbol-defs.svg#icon-call"></use>
+                  </svg> </a
+                >З’єднаємо зараз
               </li>
               <li class="hero-list-item">
-                <a href="" class="hero-list-link"></a>Цілодобово
+                <a href="" class="hero-list-link">
+                  <svg class="hero-list-icon" width="42" height="42">
+                    <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                  </svg> </a
+                >Цілодобово
               </li>
               <li class="hero-list-item">
-                <a href="" class="hero-list-link"></a>Вартість 400 грн
+                <a href="" class="hero-list-link">
+                  <svg class="hero-list-icon" width="42" height="42">
+                    <use href="./images/symbol-defs.svg#icon-emptywallet"></use>
+                  </svg> </a
+                >Вартість 400 грн
               </li>
             </ul>
           </div>
-          <div class="hero-container-second">
-            <img
-              src="./images/hero-photo.png"
-              alt="hero-photo"
-              class="hero-photo"
-              width="500"
-            />
+          <div class="hero-photo-phone">
+            <div class="hero-container-second">
+              <img
+                src="./images/hero-photo.png"
+                alt="hero-photo"
+                class="hero-photo"
+                width="500"
+              />
+            </div>
+            <div class="hero-phone-icon-container">
+              <svg class="hero-phone-icon" width="52" height="48">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -174,34 +193,88 @@
           <h2 id="pay" class="paymentspage-title">Послуги та вартість</h2>
           <ul class="paymentspage-list">
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Педіатрія</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="95" height="100">
+                  <use href="./images/symbol-defs.svg#icon-Baby"></use>
+                </svg>
+                <p class="paymentspage-list-text">Педіатрія</p>
+              </div>
             </li>
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Вакцинація</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="95" height="100">
+                  <use href="./images/symbol-defs.svg#icon-Syringe"></use>
+                </svg>
+                <p class="paymentspage-list-text">Вакцинація</p>
+              </div>
             </li>
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Ортопед</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="100" height="100">
+                  <use href="./images/symbol-defs.svg#icon-Elbow"></use>
+                </svg>
+                <p class="paymentspage-list-text">Ортопед</p>
+              </div>
             </li>
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Гастроентеролог</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="100" height="100">
+                  <use href="./images/symbol-defs.svg#icon-Stomach"></use>
+                </svg>
+                <p class="paymentspage-list-text">Гастроентеролог</p>
+              </div>
             </li>
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Стоматолог</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="100" height="80">
+                  <use
+                    href="./images/symbol-defs.svg#icon-Dental-Medicine"
+                  ></use>
+                </svg>
+                <p class="paymentspage-list-text">Стоматолог</p>
+              </div>
             </li>
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Невролог</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="90" height="100">
+                  <use
+                    href="./images/symbol-defs.svg#icon-Medical-Doctor"
+                  ></use>
+                </svg>
+                <p class="paymentspage-list-text">Невролог</p>
+              </div>
             </li>
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Кардіолог</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="100" height="100">
+                  <use href="./images/symbol-defs.svg#icon-Heart"></use>
+                </svg>
+                <p class="paymentspage-list-text">Кардіолог</p>
+              </div>
             </li>
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Уролог</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="65" height="100">
+                  <use href="./images/symbol-defs.svg#icon-Kidney"></use>
+                </svg>
+                <p class="paymentspage-list-text">Уролог</p>
+              </div>
             </li>
             <li class="paymentspage-list-item">
-              <p class="paymentspage-list-text">Лабораторія</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="86" height="90">
+                  <use href="./images/symbol-defs.svg#icon-Laboratory"></use>
+                </svg>
+                <p class="paymentspage-list-text">Лабораторія</p>
+              </div>
             </li>
             <li class="paymentspage-list-item last">
-              <p class="paymentspage-list-text">Дивитись ще</p>
+              <div class="paymentspage-list-container">
+                <svg class="paymentspage-list-icon" width="80" height="80">
+                  <use href="./images/symbol-defs.svg#icon-arrowright"></use>
+                </svg>
+                <p class="paymentspage-list-text">Дивитись ще</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -295,30 +368,70 @@
 
     <footer class="footer">
       <div class="container">
-        <address id="contacts" class="address">
-          <ul class="address-list">
-            <li class="address-list-item">
-              <p class="address-list-item-text">Адреса:</p>
-              <a href="" class="address-list-item-link"
-                >м.Львів, проспект Відродження, 121</a
-              >
-            </li>
-            <li class="address-list-item">
-              <p class="address-list-item-text">Email:</p>
-              <a
-                href="mailto:evidence.ua@gmail.com"
-                class="address-list-item-link"
-                >evidence.ua@gmail.com</a
-              >
-            </li>
-            <li class="address-list-item">
-              <p class="address-list-item-text">Телефон:</p>
-              <a href="tel:+8000000000" class="address-list-item-link"
-                >(800) 000 00 00</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="address-container">
+          <address id="contacts" class="address">
+            <ul class="address-list">
+              <li class="address-list-item">
+                <div class="address-list-container">
+                  <svg class="address-icon" width="52" height="52">
+                    <use href="./images/symbol-defs.svg#icon-address"></use>
+                  </svg>
+                  <div class="address-list-item-container">
+                    <p class="address-list-item-text">Адреса:</p>
+                    <a href="" class="address-list-item-link"
+                      >м.Львів, проспект Відродження, 121</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="address-list-item">
+                <div class="address-list-container">
+                  <svg class="address-icon" width="42" height="42">
+                    <use href="./images/symbol-defs.svg#icon-email"></use>
+                  </svg>
+                  <div class="address-list-item-container">
+                    <p class="address-list-item-text">Email:</p>
+                    <a
+                      href="mailto:evidence.ua@gmail.com"
+                      class="address-list-item-link"
+                      >evidence.ua@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="address-list-item">
+                <div class="address-list-container">
+                  <svg class="address-icon" width="42" height="42">
+                    <use href="./images/symbol-defs.svg#icon-call"></use>
+                  </svg>
+                  <div class="address-list-item-container">
+                    <p class="address-list-item-text">Телефон:</p>
+                    <a href="tel:+8000000000" class="address-list-item-link"
+                      >(800) 000 00 00</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="soc-nav">
+              <li class="soc-nav-item">
+                <svg class="soc-nav-icon" width="42" height="42">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="soc-nav-item">
+                <svg class="soc-nav-icon" width="42" height="42">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="soc-nav-item">
+                <svg class="soc-nav-icon" width="42" height="42">
+                  <use href="./images/symbol-defs.svg#icon-google"></use>
+                </svg>
+              </li>
+            </ul>
+          </address>
+        </div>
         <div class="footer-container">
           <div class="footer-info-logo">
             <a href="./index.html" class="header-logo logo-footer"
