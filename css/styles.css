@@ -65,6 +65,11 @@ h6 {
   display: flex;
 }
 
+.logo-icon {
+  fill: #2887d9;
+  stroke: transparent;
+}
+
 .logo-photo {
   margin-bottom: 8px;
 }
@@ -110,6 +115,17 @@ h6 {
   margin-bottom: 35px;
 }
 
+.hero-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-list-icon {
+  margin-bottom: 16px;
+}
+
 .hero-text {
   font-size: 17px;
   line-height: 183%;
@@ -126,6 +142,7 @@ h6 {
   padding: 18px 140px;
   border-radius: 50px;
   border: none;
+  margin-bottom: 150px;
 }
 
 .primary-button:hover,
@@ -138,6 +155,30 @@ h6 {
   font-size: 9px;
   line-height: 129%;
   color: var(--primary-text-color);
+}
+
+.hero-photo-phone {
+  display: flex;
+}
+
+.hero-phone-icon {
+  border: 2px solid #2887d9;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #d0e1f1;
+  padding: 16px 10px 16px 18px;
+}
+
+.hero-phone-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #83a9c9;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  align-self: flex-end;
 }
 
 /* Section 'about' */
@@ -306,7 +347,7 @@ h6 {
   font-size: 22px;
   line-height: 183%;
   color: var(--color-accent);
-  padding: 179px 80px 47px;
+  /* padding: 179px 80px 47px; */
   text-align: center;
 }
 
@@ -315,14 +356,28 @@ h6 {
 }
 
 .paymentspage-list-item {
+  min-height: 270px;
+  min-width: 270px;
   width: calc((100% - 4 * 65px) / 5);
   margin-bottom: 38px;
   background-color: #cef2f0;
   border-radius: 50px;
-  /* max-width: 180px; */
   max-height: 180px;
   border: 1px solid #72b7f2;
   border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.paymentspage-list-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 47px;
+}
+
+.paymentspage-list-icon {
+  margin: auto;
+  margin-bottom: 32px;
 }
 
 .last {
@@ -486,6 +541,19 @@ h6 {
   line-height: 150%;
   color: var(--primary-text-color);
   font-style: normal;
+}
+
+.address-list-container {
+  display: flex;
+  gap: 30px;
+}
+
+.address-list-item-container {
+  flex-direction: column;
+}
+
+.soc-nav {
+  display: flex;
 }
 
 .footer-container {
