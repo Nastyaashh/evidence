@@ -143,6 +143,7 @@ h6 {
   border-radius: 50px;
   border: none;
   margin-bottom: 150px;
+  transition-duration: 300ms;
 }
 
 .primary-button:hover,
@@ -179,6 +180,9 @@ h6 {
   width: 100px;
   height: 100px;
   align-self: flex-end;
+  position: fixed;
+  bottom: 29px;
+  right: 64px;
 }
 
 /* Section 'about' */
@@ -309,6 +313,7 @@ h6 {
   border: none;
   padding: 18px 209px;
   border-radius: 50px;
+  transition-duration: 300ms;
 }
 
 .doctorpage-accent {
@@ -444,9 +449,30 @@ h6 {
   color: var(--color-accent);
   border-bottom: 1px solid #72b7f2;
   padding: 32px 32px 32px 23px;
-  width: 1053px;
+  width: 748px;
   height: 98px;
+  /* cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none; */
 }
+
+/* .questionspage-list-ordered-item::after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\2212";
+}
+
+.questionspage-list-ordered-plus {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+} */
 
 .questionspage-list-container {
   background-color: #f3dcdc;
@@ -484,11 +510,12 @@ h6 {
   color: var(--primary-text-color);
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   padding: 38px 39px 38px 80px;
-  min-width: 680px;
+  /* min-width: 680px; */
 }
 
 .responsepage-list-item {
   display: flex;
+  position: relative;
 }
 
 .responsepage-list-text-container {
@@ -496,6 +523,8 @@ h6 {
   border: 1px solid var(--background-color-button);
   border-radius: 50px;
   margin-bottom: 50px;
+  width: 484px;
+  height: 242px;
 }
 
 .responsepage-container {
@@ -503,11 +532,23 @@ h6 {
   gap: 60px;
 }
 
+.responsepage-container-reply {
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
 .responsepage-photo {
   margin-bottom: 98px;
   width: 742px;
   height: 730px;
   margin: 0 auto;
+}
+
+.responsepage-list-photo {
+  position: absolute;
+  left: -96px;
+  top: 52px;
 }
 
 /* FOOTER */
@@ -552,8 +593,14 @@ h6 {
   flex-direction: column;
 }
 
+.address-container {
+  display: flex;
+  gap: 97px;
+}
+
 .soc-nav {
   display: flex;
+  gap: 12px;
 }
 
 .footer-container {
