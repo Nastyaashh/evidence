@@ -91,6 +91,12 @@ h6 {
   color: var(--background-color-button-pseudo);
 }
 
+.logo:focus,
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 250ms ease-in-out;
+}
+
 /* Hero */
 
 .hero-section {
@@ -185,6 +191,18 @@ h6 {
   right: 64px;
 }
 
+.hero-phone-icon-container:focus,
+.hero-phone-icon-container:hover {
+  background-color: var(--background-color-button-pseudo);
+  box-shadow: 0 4px 32px 0 rgba(35, 63, 119, 0.5);
+}
+
+.hero-phone-icon:focus,
+.hero-phone-icon:hover {
+  transform: scale(1.15);
+  transition: transform 250ms ease-in-out;
+}
+
 /* Section 'about' */
 
 .about {
@@ -203,6 +221,12 @@ h6 {
 .about-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.about-list-item:focus,
+.about-list-item:hover {
+  transform: scale(1.07);
+  transition: transform 250ms ease-in-out;
 }
 
 .about-list-title {
@@ -271,6 +295,15 @@ h6 {
 .doctorpage {
   padding-top: 32px;
   padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.doctorpage-container {
+  padding-top: 200px;
+  padding-bottom: 224px;
 }
 
 .doctorpage-title {
@@ -290,10 +323,14 @@ h6 {
   gap: 68px;
 }
 
+.doctorpage-list-item {
+  padding-left: 39px;
+}
+
 .doctorpage-list-title {
   font-weight: 400;
   font-size: 68px;
-  line-height: 46%;
+  /* line-height: 46%; */
   color: #d1a4bc;
   margin-bottom: 32px;
 }
@@ -305,6 +342,7 @@ h6 {
 }
 
 .doctorpage-button {
+  width: 636px;
   font-size: 22px;
   line-height: 137%;
   color: #fff;
@@ -314,6 +352,7 @@ h6 {
   padding: 18px 209px;
   border-radius: 50px;
   transition-duration: 300ms;
+  margin-left: 14px;
 }
 
 .doctorpage-accent {
@@ -325,12 +364,34 @@ h6 {
 .doctorpage-section {
   border: 1px solid #a4cef5;
   border-radius: 50px;
-  width: 520px;
-  height: 280px;
+  width: 672px;
+  height: 316px;
 }
 
 .doctorpage-photo-container {
   margin-bottom: 80px;
+  position: relative;
+  padding-top: 72px;
+}
+
+.doctorpage-photo-list-item {
+  margin-left: 20px;
+}
+
+.doctorpage-wrapper {
+  padding-left: 100px;
+}
+
+.pos-second {
+  position: absolute;
+  top: 40px;
+  right: -618px;
+}
+
+.pos-third {
+  position: absolute;
+  top: 310px;
+  left: 290px;
 }
 
 /* paymentspage */
@@ -421,6 +482,10 @@ h6 {
   padding-bottom: 93px;
 }
 
+.questionspage-wrapper {
+  display: flex;
+}
+
 .questionspage-title {
   font-weight: 600;
   font-size: 34px;
@@ -438,6 +503,10 @@ h6 {
   min-width: 285px;
 }
 
+.questionspage-list-item:nth-last-child(1) {
+  margin-bottom: 108px;
+}
+
 .questionspage-list-item:hover,
 .questionspage-list-item:focus {
   color: var(--background-color-button-pseudo);
@@ -451,35 +520,14 @@ h6 {
   padding: 32px 32px 32px 23px;
   width: 748px;
   height: 98px;
-  /* cursor: pointer;
-  width: 100%;
-  text-align: left;
-  outline: none; */
 }
-
-/* .questionspage-list-ordered-item::after {
-  content: "\002B";
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active::after {
-  content: "\2212";
-}
-
-.questionspage-list-ordered-plus {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-} */
 
 .questionspage-list-container {
   background-color: #f3dcdc;
   border-radius: 50px;
   padding: 56px;
-  width: 449px;
-  height: 720px;
+  max-width: 449px;
+  /* height: 1466px; */
   margin-bottom: 93px;
 }
 
@@ -487,6 +535,32 @@ h6 {
   display: flex;
   gap: 124px;
   margin-right: 194px;
+}
+
+.questionspage-list-circle-average {
+  width: 176px;
+  height: 177px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #72b7f2;
+  margin-bottom: 175px;
+}
+
+.questionspage-list-circle-big {
+  width: 290px;
+  height: 275px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #72b7f2;
+  margin-bottom: 177px;
+}
+
+.questionspage-list-circle-small {
+  width: 130px;
+  height: 130px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #72b7f2;
 }
 
 /* responsepage */
@@ -551,6 +625,64 @@ h6 {
   top: 52px;
 }
 
+/* Modal */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: #eceff7;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 137%;
+  color: #2887d9;
+  max-width: 1302px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 137%;
+  color: #2887d9;
+}
+
+.modal-medlist {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 183%;
+  color: #2887d9;
+  background-color: #d0e1f1;
+  padding: 8px 16px;
+  width: 1058px;
+  height: 60px;
+}
+
+.modal-medlist-item {
+  font-weight: 400;
+  font-size: 24px;
+  color: #3a3b3d;
+}
+
 /* FOOTER */
 
 .footer {
@@ -595,7 +727,7 @@ h6 {
 
 .address-container {
   display: flex;
-  gap: 97px;
+  gap: 100px;
 }
 
 .soc-nav {
@@ -608,16 +740,16 @@ h6 {
 }
 
 .footer-info-logo {
-  margin-right: 134px;
+  margin-right: 90px;
 }
 
 .footer-info-first {
-  margin-right: 205px;
+  margin-right: 161px;
   min-width: 418px;
 }
 
 .footer-info-second {
-  margin-right: 345px;
+  margin-right: 247px;
 }
 
 .footer-info-third {
@@ -629,12 +761,21 @@ h6 {
   font-size: 16px;
   line-height: 150%;
   color: var(--color-accent);
+  margin-bottom: 8px;
 }
 
 .footer-info-list-item {
+  /* list-style-type: circle; */
   font-size: 16px;
   line-height: 150%;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
+}
+
+.footer-info-list-item::before {
+  content: "•";
+  font-size: 20px;
+  padding-right: 5px;
 }
 
 .footer-nav {
@@ -642,6 +783,15 @@ h6 {
   font-size: 16px;
   line-height: 150%;
   color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.footer-nav-list {
+  width: 96px;
+}
+
+.footer-nav-list-item {
+  margin-bottom: 8px;
 }
 
 .footer-nav-list-link {
@@ -655,12 +805,18 @@ h6 {
   font-size: 16px;
   line-height: 150%;
   color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.footer-service-list {
+  width: 155px;
 }
 
 .footer-service-list-item {
   font-size: 16px;
   line-height: 150%;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
 }
 
 .footer-nav-text:hover,

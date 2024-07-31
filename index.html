@@ -25,9 +25,6 @@
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo">
-            <!-- <svg class="logo-icon">
-              <use href="./images/symbol-defs.svg#icon-Mask-group"></use>
-            </svg> -->
             <img
               src="./images/Evidence-title-1.svg"
               alt="Evidence-title"
@@ -55,7 +52,7 @@
               <a href="#contacts" class="header-menu-link">Контакти</a>
             </li>
             <li class="header-menu-item">
-              <svg class="header-menu-link" width="42" height="42">
+              <svg class="header-menu-link logo" width="42" height="42">
                 <use href="./images/symbol-defs.svg#icon-login"></use>
               </svg>
             </li>
@@ -142,42 +139,46 @@
         </div>
       </section>
       <section class="doctorpage">
-        <div class="container">
-          <div class="doctorpage-section">
-            <h2 id="doctors" class="doctorpage-title">Лікарі</h2>
-            <ul class="doctorpage-list">
-              <li class="doctorpage-list-item">
-                <h3 class="doctorpage-list-title">+100</h3>
-                <p class="doctorpage-list-text">досвідчених лікарів</p>
-              </li>
-              <li class="doctorpage-list-item">
-                <h3 class="doctorpage-list-title">
-                  35 <span class="doctorpage-accent">років</span>
-                </h3>
-                <p class="doctorpage-list-text">середній стаж</p>
-              </li>
-            </ul>
+        <div class="container doctorpage-wrapper">
+          <div class="doctorpage-container">
+            <div class="doctorpage-section">
+                <h2 id="doctors" class="doctorpage-title">Лікарі</h2>
+                <ul class="doctorpage-list">
+                  <li class="doctorpage-list-item">
+                      <h3 class="doctorpage-list-title">+100</h3>
+                      <p class="doctorpage-list-text">досвідчених лікарів</p>
+                  </li>
+                  <li class="doctorpage-list-item">
+                          <h3 class="doctorpage-list-title">
+                            35 
+                            <span class="doctorpage-accent">років</span>
+                          </h3>
+                      <p class="doctorpage-list-text">середній стаж</p>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="doctorpage-button primary-button">
+                Знайти лікаря
+              </button>
           </div>
-          <button type="button" class="doctorpage-button primary-button">
-            Знайти лікаря
-          </button>
+          </div>
           <div class="doctorpage-photo-container">
             <ul class="doctorpage-photo-list">
-              <li class="doctorpage-photo-list-item">
+              <li class="doctorpage-photo-list-item pos-first">
                 <img
                   src="./images/doc-1.png"
                   alt="Doctor 1"
                   class="doctorpage-photo"
                 />
               </li>
-              <li class="doctorpage-photo-list-item">
+              <li class="doctorpage-photo-list-item pos-second">
                 <img
                   src="./images/doc-2.png"
                   alt="Doctor 2"
                   class="doctorpage-photo"
                 />
               </li>
-              <li class="doctorpage-photo-list-item">
+              <li class="doctorpage-photo-list-item pos-third">
                 <img
                   src="./images/doc-3.png"
                   alt="Doctor 3"
@@ -280,56 +281,45 @@
         </div>
       </section>
       <section class="questionspage">
-        <div class="container">
-          <h2 id="questions" class="questionspage-title">Питання-відповідь</h2>
-          <div class="questionspage-container">
-            <div class="questionspage-list-container">
-              <ul class="questionspage-list">
-                <li class="questionspage-list-item">Загальні питання</li>
-                <li class="questionspage-list-item">Реєстрація та вхід</li>
-                <li class="questionspage-list-item">Вакцинація</li>
-                <li class="questionspage-list-item">Відео-консультація</li>
-              </ul>
-            </div>
-            <ol class="questionspage-list-ordered">
-              <li class="questionspage-list-ordered-item">
-                Як записатись до лікаря самостійно?
-              </li>
-              <!-- <div class="questionspage-list-ordered-plus">
-                <ul>
-                  <li>У розділі “Лікарі” оберіть потрібного лікаря.</li>
-                  <li>Натисніть на кнопку “Записатись на прийом”.</li>
-                  <li>
-                    Обрати зручну для вас дату, клікнути на кнопку "Записатись
-                    на прийом".
-                  </li>
-                  <li>Обрати вільний час прийому.</li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+          <div class="container">
+            <h2 id="questions" class="questionspage-title">Питання-відповідь</h2>
+            <div class="questionspage-container questionspage-wrapper">
+              <div class="questionspage-list-container">
+                <ul class="questionspage-list">
+                  <li class="questionspage-list-item">Загальні питання</li>
+                  <li class="questionspage-list-item">Реєстрація та вхід</li>
+                  <li class="questionspage-list-item">Вакцинація</li>
+                  <li class="questionspage-list-item">Відео-консультація</li>
                 </ul>
-              </div> -->
-              <li class="questionspage-list-ordered-item">
-                Як записатись до лікаря за направленням?
-              </li>
-              <li class="questionspage-list-ordered-item">
-                Як скасувати запис?
-              </li>
-              <li class="questionspage-list-ordered-item">
-                Як переглянути запис на прийом?
-              </li>
-              <li class="questionspage-list-ordered-item">
-                Як залишити відгук про лікаря?
-              </li>
-              <li class="questionspage-list-ordered-item">
-                Як змінити особисті дані?
-              </li>
-            </ol>
+                <div class="questionspage-list-circle-average"></div>
+                <div class="questionspage-list-circle-big"></div>
+                <div class="questionspage-list-circle-small"></div>
+              </div>
+              
+              <ol class="questionspage-list-ordered">
+                <li class="questionspage-list-ordered-item">
+                  Як записатись до лікаря самостійно?
+                </li>
+                <li class="questionspage-list-ordered-item">
+                  Як записатись до лікаря за направленням?
+                </li>
+                <li class="questionspage-list-ordered-item">
+                  Як скасувати запис?
+                </li>
+                <li class="questionspage-list-ordered-item">
+                  Як переглянути запис на прийом?
+                </li>
+                <li class="questionspage-list-ordered-item">
+                  Як залишити відгук про лікаря?
+                </li>
+                <li class="questionspage-list-ordered-item">
+                  Як змінити особисті дані?
+                </li>
+              </ol>
+            </div>
           </div>
-        </div>
+          </div>
+          </div>
       </section>
       <section class="responsepage">
         <div class="container">
@@ -385,6 +375,24 @@
         </div>
       </section>
     </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2 class="modal-title">Вакцинація</h2>
+<ul class="modal-medlist">Назва препарату
+  <li class="modal-medlist-item">Вакцинація від кашлюку, дифтерії, правцю (Бустрікс)</li>
+  <li class="modal-medlist-item">Вакцинація від гепатиту А (Хаврикс)</li>
+  <li class="modal-medlist-item">Вакцинація від ротавірусної інфекції (Ротарикс)</li>
+  <li class="modal-medlist-item">Вакцинація Превенар (від пневмококової інфекції)</li>
+  <li class="modal-medlist-item">Вакцинація від кашлюку, дифтерії, правцю (Бустрікс)</li>
+  <li class="modal-medlist-item">Вакцинація від гепатиту А (Хаврикс)</li>
+  <li class="modal-medlist-item">Вакцинація від ротавірусної інфекції (Ротарикс)</li>
+  <li class="modal-medlist-item">Вакцинація Превенар (від пневмококової інфекції)</li>
+  <li class="modal-medlist-item">Вакцинація від кашлюку, дифтерії, правцю (Бустрікс)</li>
+  <li class="modal-medlist-item">Вакцинація від гепатиту А (Хаврикс)</li>
+</ul>
+      </div>
+  </div>
 
     <footer class="footer">
       <div class="container">
@@ -465,12 +473,10 @@
           <div class="footer-info-first">
             <p class="footer-info">Наша клініка</p>
             <ul class="footer-info-list">
-              <li class="footer-info-list-item">
-                більше 10 років турбуємось про Ваше здоров'я
+              <li class="footer-info-list-item">більше 10 років турбуємось про Ваше здоров'я
               </li>
               <li class="footer-info-list-item">клініка для дітей</li>
-              <li class="footer-info-list-item">
-                найбільший медичний центр в області
+              <li class="footer-info-list-item">найбільший медичний центр в області
               </li>
               <li class="footer-info-list-item">широкий спектр послуг</li>
               <li class="footer-info-list-item">всі види щеплень</li>
