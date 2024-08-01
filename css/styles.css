@@ -660,27 +660,51 @@ h6 {
 }
 
 .modal-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   font-size: 32px;
   line-height: 137%;
   color: #2887d9;
+  padding: 28px 28px;
 }
 
-.modal-medlist {
+.modal-title-wrapper {
+  display: flex;
+  gap: 543px;
+  background-color: #d0e1f1;
+}
+
+.modal-title-list {
   font-weight: 600;
   font-size: 24px;
   line-height: 183%;
   color: #2887d9;
-  background-color: #d0e1f1;
   padding: 8px 16px;
+  padding-left: 116px;
   width: 1058px;
   height: 60px;
 }
 
 .modal-medlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 400;
   font-size: 24px;
   color: #3a3b3d;
+  padding: 8px 8px;
+}
+
+.modal-paylist-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 142px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 220%;
+  color: #2887d9;
 }
 
 /* FOOTER */
