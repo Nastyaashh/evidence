@@ -649,6 +649,7 @@ h6 {
 }
 
 .modal {
+  padding: 46px 54px 68px 60px;
   background-color: #eceff7;
   font-weight: 600;
   font-size: 32px;
@@ -657,6 +658,11 @@ h6 {
   max-width: 1302px;
   max-height: 80%;
   overflow-y: auto;
+}
+
+.modal-button {
+  display: block;
+  margin-left: auto;
 }
 
 .modal-title {
@@ -672,7 +678,7 @@ h6 {
 
 .modal-title-wrapper {
   display: flex;
-  gap: 543px;
+  gap: 456px;
   background-color: #d0e1f1;
 }
 
@@ -700,7 +706,7 @@ h6 {
 .modal-paylist-item {
   display: flex;
   justify-content: flex-end;
-  padding-right: 142px;
+  padding-right: 128px;
   font-weight: 700;
   font-size: 20px;
   line-height: 220%;
