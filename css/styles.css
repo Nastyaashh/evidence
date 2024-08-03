@@ -663,6 +663,14 @@ h6 {
 .modal-button {
   display: block;
   margin-left: auto;
+  background-color: transparent;
+  border: transparent;
+}
+
+.modal-button:focus,
+.modal-button:hover {
+  transform: scale(1.25);
+  transition: transform 250ms ease-in-out;
 }
 
 .modal-title {
@@ -703,9 +711,16 @@ h6 {
   padding: 8px 8px;
 }
 
+.modal-medlist-icon {
+  fill: transparent;
+  stroke: black;
+  margin-right: 56px;
+}
+
 .modal-paylist-item {
   display: flex;
-  justify-content: flex-end;
+  margin-right: 0;
+  margin-left: auto;
   padding-right: 128px;
   font-weight: 700;
   font-size: 20px;
