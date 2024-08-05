@@ -47,9 +47,9 @@ h6 {
 }
 
 .container {
-  width: 1286px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1472px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: 0 auto;
 }
 
@@ -102,6 +102,7 @@ h6 {
 .hero-section {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--background-color-button);
 }
 
 .hero-container-second {
@@ -372,26 +373,25 @@ h6 {
   margin-bottom: 80px;
   position: relative;
   padding-top: 72px;
+  left: -124px;
 }
 
 .doctorpage-photo-list-item {
-  margin-left: 20px;
-}
-
-.doctorpage-wrapper {
-  padding-left: 100px;
+  position: absolute;
+  right: 192px;
+  top: 60px;
 }
 
 .pos-second {
   position: absolute;
   top: 40px;
-  right: -618px;
+  right: -264px;
 }
 
 .pos-third {
   position: absolute;
-  top: 310px;
-  left: 290px;
+  top: 356px;
+  right: -124px;
 }
 
 /* paymentspage */
@@ -607,9 +607,11 @@ h6 {
 }
 
 .responsepage-container-reply {
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+  margin-left: 124px;
 }
 
 .responsepage-photo {
@@ -623,6 +625,26 @@ h6 {
   position: absolute;
   left: -96px;
   top: 52px;
+}
+
+.responsepage-list {
+  position: relative;
+}
+
+.responsepage-icon {
+  display: flex;
+  fill: transparent;
+  stroke: #2887d9;
+  align-self: flex-end;
+  position: absolute;
+}
+
+.responsepage-icon:focus,
+.responsepage-icon:hover {
+  border-radius: 50%;
+  box-shadow: 0 4px 32px 0 rgba(35, 63, 119, 0.5);
+  transform: scale(1.25);
+  transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 /* Modal */
@@ -738,13 +760,13 @@ h6 {
 }
 
 .address {
-  margin-bottom: 38px;
+  margin-bottom: 18px;
 }
 
 .address-list {
   display: flex;
   gap: 140px;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .address-list-item-text {
@@ -768,24 +790,37 @@ h6 {
 
 .address-list-item-container {
   flex-direction: column;
+  min-width: 300px;
 }
 
 .address-container {
-  display: flex;
-  gap: 100px;
+  border-bottom: 1px solid var(--background-color-button);
 }
 
 .soc-nav {
   display: flex;
   gap: 12px;
+  margin-left: 140px;
+  position: absolute;
+  right: 50%;
+  translate: 50%;
+  top: 50%;
+}
+
+.soc-nav-icon:focus,
+.soc-nav-icon:hover {
+  transform: scale(1.2);
+  transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 .footer-container {
   display: flex;
+  padding-top: 20px;
 }
 
 .footer-info-logo {
   margin-right: 90px;
+  position: relative;
 }
 
 .footer-info-first {
