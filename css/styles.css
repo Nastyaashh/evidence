@@ -32,7 +32,7 @@ a {
 
 img {
   display: block;
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 p,
@@ -382,6 +382,10 @@ h6 {
   top: 60px;
 }
 
+.pos-first {
+  width: 270px;
+}
+
 .pos-second {
   position: absolute;
   top: 40px;
@@ -392,6 +396,7 @@ h6 {
   position: absolute;
   top: 356px;
   right: -124px;
+  width: 392px;
 }
 
 /* paymentspage */
@@ -439,6 +444,7 @@ h6 {
   display: flex;
   flex-direction: column;
   padding-top: 47px;
+  position: relative;
 }
 
 .paymentspage-list-icon {
@@ -473,6 +479,15 @@ h6 {
   gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.line::after {
+  content: "";
+  width: 25px;
+  border: 1px solid var(--background-color-button);
+  position: absolute;
+  right: -25px;
+  bottom: 50%;
 }
 
 /* questionspage */
