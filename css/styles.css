@@ -47,9 +47,9 @@ h6 {
 }
 
 .container {
-  width: 1472px;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 392px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin: 0 auto;
 }
 
@@ -207,14 +207,18 @@ h6 {
 /* Section 'about' */
 
 .about {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 32px;
+  padding-bottom: 0;
+}
+
+.about-section {
+  width: 392px;
 }
 
 .about-text {
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 92%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 112%;
   color: var(--color-accent);
   margin-bottom: 50px;
 }
@@ -231,142 +235,126 @@ h6 {
 }
 
 .about-list-title {
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 8px;
 }
 
 .first {
-  font-size: 113px;
+  font-size: 64px;
   color: #edbbd6;
 }
 
 .second {
-  font-size: 106px;
+  font-size: 64px;
   color: var(--color-accent);
 }
 
 .third {
-  font-size: 106px;
+  font-size: 64px;
   color: #58d7d0;
 }
 
 .fourth {
-  font-size: 106px;
+  font-size: 64px;
   color: #facf4f;
 }
 
 .about-list-text {
-  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
   text-align: center;
   color: var(--color-accent);
+  max-width: 153px;
 }
 
 .about-list-item {
-  border-radius: 40px 0 0 0;
-  width: 620px;
-  height: 280px;
-}
-
-/* .about-section {
+  /* border-radius: 40px 0 0 0; */
   display: flex;
-} */
+  justify-content: space-evenly;
+  width: 392px;
+  height: 86px;
+}
 
 .pations {
   background-color: #f3dfea;
 }
 
 .vacinations {
-  border-radius: 0 40px 0 0;
   background-color: #d0e1f1;
 }
 
 .research {
-  border-radius: 0 0 0 40px;
   background-color: #cef2f0;
 }
 
 .care {
-  border-radius: 0 0 40px 0;
   background-color: #fce296;
 }
 
 /* Doctorpage */
 
 .doctorpage {
-  padding-top: 32px;
-  padding-bottom: 80px;
+  padding-top: 9px;
+  padding-bottom: 29px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
 }
 
-.doctorpage-container {
-  padding-top: 200px;
-  padding-bottom: 224px;
-}
-
 .doctorpage-title {
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 92%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 112%;
   color: var(--color-accent);
-  padding-top: 40px;
-  padding-left: 36px;
-  padding-bottom: 50px;
+  padding-top: 23px;
+  margin-bottom: 170px;
+  /* padding-left: 36px;
+  padding-bottom: 50px; */
 }
 
 .doctorpage-list {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 68px;
-}
-
-.doctorpage-list-item {
-  padding-left: 39px;
+  gap: 34px;
+  margin-bottom: 11px;
 }
 
 .doctorpage-list-title {
   font-weight: 400;
-  font-size: 68px;
-  /* line-height: 46%; */
+  font-size: 48px;
   color: #d1a4bc;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .doctorpage-list-text {
-  font-size: 22px;
+  font-size: 16px;
   text-align: center;
   color: var(--color-accent);
 }
 
 .doctorpage-button {
-  width: 636px;
-  font-size: 22px;
-  line-height: 137%;
+  width: 342px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 112%;
+  text-align: center;
   color: #fff;
   cursor: pointer;
   background-color: var(--background-color-button);
   border: none;
-  padding: 18px 209px;
-  border-radius: 50px;
+  border-radius: 20px;
   transition-duration: 300ms;
-  margin-left: 14px;
+  height: 46px;
 }
 
 .doctorpage-accent {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 16px;
   text-align: center;
-}
-
-.doctorpage-section {
-  border: 1px solid #a4cef5;
-  border-radius: 50px;
-  width: 672px;
-  height: 316px;
 }
 
 .doctorpage-photo-container {
@@ -378,18 +366,19 @@ h6 {
 
 .doctorpage-photo-list-item {
   position: absolute;
-  right: 192px;
-  top: 60px;
+  right: -66px;
+  top: 10px;
 }
 
 .pos-first {
-  width: 270px;
+  width: 139px;
 }
 
 .pos-second {
   position: absolute;
-  top: 40px;
-  right: -264px;
+  top: 75px;
+  left: -224px;
+  width: 112px;
 }
 
 .pos-third {
