@@ -24,15 +24,23 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="header-logo">
-            <img
-              src="./images/Evidence-title-1.svg"
-              alt="Evidence-title"
-              class="logo-photo"
-            />
-            <img src="./images/Evidence-title-2.svg" alt="Evidence-title" />
-          </a>
-          <ul id="navigation" class="header-menu-list">
+      <div class="header-menu-nav">
+            <svg class="hero-menu-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-burger_menu"></use>
+            </svg>
+            <a href="./index.html" class="header-logo">
+              <img
+                src="./images/Evidence-title-1.svg"
+                alt="Evidence-title"
+                class="logo-photo"
+              />
+              <img src="./images/Evidence-title-2.svg" alt="Evidence-title" />
+            </a>
+            <svg class="hero-search-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-search"></use>
+            </svg>
+      </div>
+          <ul id="navigation" class="header-menu-list visually-hidden">
             <li class="header-menu-item">
               <a href="#info" class="header-menu-link">Про нас</a>
             </li>
@@ -78,7 +86,7 @@
                   <svg class="hero-list-icon" width="42" height="42">
                     <use href="./images/symbol-defs.svg#icon-call"></use>
                   </svg> </a
-                >З’єднаємо зараз
+                ><p class="hero-list-text">З’єднаємо зараз</p>
               </li>
               <li class="hero-list-item">
                 <a href="" class="hero-list-link">
@@ -92,7 +100,7 @@
                   <svg class="hero-list-icon" width="42" height="42">
                     <use href="./images/symbol-defs.svg#icon-emptywallet"></use>
                   </svg> </a
-                >Вартість 400 грн
+                ><p class="hero-list-text">Вартість 400 грн</p>
               </li>
             </ul>
           </div>
@@ -200,7 +208,7 @@
           <ul class="paymentspage-list">
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container line">
-                <svg class="paymentspage-list-icon" width="95" height="100">
+                <svg class="paymentspage-list-icon" width="45" height="48">
                   <use href="./images/symbol-defs.svg#icon-Baby"></use>
                 </svg>
                 <p class="paymentspage-list-text">Педіатрія</p>
@@ -208,7 +216,7 @@
             </li>
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container line">
-                <svg class="paymentspage-list-icon" width="95" height="100">
+                <svg class="paymentspage-list-icon" width="45" height="47">
                   <use href="./images/symbol-defs.svg#icon-Syringe"></use>
                 </svg>
                 <p class="paymentspage-list-text">Вакцинація</p>
@@ -216,7 +224,7 @@
             </li>
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container line">
-                <svg class="paymentspage-list-icon" width="100" height="100">
+                <svg class="paymentspage-list-icon" width="45" height="47">
                   <use href="./images/symbol-defs.svg#icon-Elbow"></use>
                 </svg>
                 <p class="paymentspage-list-text">Ортопед</p>
@@ -224,7 +232,7 @@
             </li>
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container">
-                <svg class="paymentspage-list-icon" width="100" height="100">
+                <svg class="paymentspage-list-icon" width="45" height="47">
                   <use href="./images/symbol-defs.svg#icon-Stomach"></use>
                 </svg>
                 <p class="paymentspage-list-text">Гастроентеролог</p>
@@ -232,7 +240,7 @@
             </li>
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container line">
-                <svg class="paymentspage-list-icon" width="100" height="100">
+                <svg class="paymentspage-list-icon" width="45" height="47">
                   <use
                     href="./images/symbol-defs.svg#icon-Dental-Medicine"
                   ></use>
@@ -242,7 +250,7 @@
             </li>
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container line">
-                <svg class="paymentspage-list-icon" width="90" height="100">
+                <svg class="paymentspage-list-icon" width="42" height="47">
                   <use
                     href="./images/symbol-defs.svg#icon-Medical-Doctor"
                   ></use>
@@ -252,7 +260,7 @@
             </li>
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container line">
-                <svg class="paymentspage-list-icon" width="100" height="100">
+                <svg class="paymentspage-list-icon" width="45" height="47">
                   <use href="./images/symbol-defs.svg#icon-Heart"></use>
                 </svg>
                 <p class="paymentspage-list-text">Кардіолог</p>
@@ -260,7 +268,7 @@
             </li>
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container">
-                <svg class="paymentspage-list-icon" width="65" height="100">
+                <svg class="paymentspage-list-icon" width="38" height="47">
                   <use href="./images/symbol-defs.svg#icon-Kidney"></use>
                 </svg>
                 <p class="paymentspage-list-text">Уролог</p>
@@ -268,7 +276,7 @@
             </li>
             <li class="paymentspage-list-item">
               <div class="paymentspage-list-container line">
-                <svg class="paymentspage-list-icon" width="86" height="90">
+                <svg class="paymentspage-list-icon" width="40" height="45">
                   <use href="./images/symbol-defs.svg#icon-Laboratory"></use>
                 </svg>
                 <p class="paymentspage-list-text">Лабораторія</p>
@@ -276,12 +284,18 @@
             </li>
             <li class="paymentspage-list-item last">
               <div class="paymentspage-list-container">
-                <svg class="paymentspage-list-icon" width="80" height="80">
+                <svg class="paymentspage-list-icon" width="42" height="45">
                   <use href="./images/symbol-defs.svg#icon-arrowright"></use>
                 </svg>
                 <p class="paymentspage-list-text">Дивитись ще</p>
               </div>
             </li>
+          </ul>
+          <ul class="paymentspage-swap-list">
+            <li class="paymentspage-swap-active"></li>
+            <li class="paymentspage-swap"></li>
+            <li class="paymentspage-swap"></li>
+            <li class="paymentspage-swap"></li>
           </ul>
         </div>
       </section>
@@ -339,8 +353,8 @@
                     src="./images/response-1.png"
                     alt="the first client"
                     class="responsepage-list-photo"
-                    width="140"
-                    height="140"
+                    width="78"
+                    height="80"
                   />
                   <div class="responsepage-list-text-container">
                     <p class="responsepage-list-text">
@@ -356,8 +370,8 @@
                     src="./images/response-2.png"
                     alt="the second client"
                     class="responsepage-list-photo"
-                    width="140"
-                    height="140"
+                    width="78"
+                    height="80"
                   />
                   <div class="responsepage-list-text-container">
                     <p class="responsepage-list-text">
@@ -443,7 +457,7 @@
               <li class="address-list-item">
                 <div class="address-list-container">
                   <svg class="address-icon" width="52" height="52">
-                    <use href="./images/symbol-defs.svg#icon-address"></use>
+                    <use href="./images/symbol-defs.svg#icon-map"></use>
                   </svg>
                   <div class="address-list-item-container">
                     <p class="address-list-item-text">Адреса:</p>
