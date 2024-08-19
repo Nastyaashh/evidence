@@ -935,7 +935,7 @@ h6 {
   display: none;
 }
 
-/* MEDIA */
+/* MEDIA LAPTOP */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -1083,7 +1083,23 @@ h6 {
     align-items: center;
     justify-content: center;
     width: 392px;
-    height: 180px;
+    height: 200px;
+  }
+
+  .pations {
+    border-radius: 40px 0 0 0;
+  }
+
+  .vacinations {
+    border-radius: 0 40px 0 0;
+  }
+
+  .research {
+    border-radius: 0 0 0 40px;
+  }
+
+  .care {
+    border-radius: 0 0 40px 0;
   }
 
   /* DOCTORPAGE */
@@ -1172,6 +1188,7 @@ h6 {
 
   .pos-first {
     width: 139px;
+    height: 139px;
     right: 100px;
     top: -60px;
   }
@@ -1180,14 +1197,16 @@ h6 {
     position: absolute;
     top: -75px;
     left: 0;
-    width: 112px;
+    width: 180px;
+    height: 180px;
   }
 
   .pos-third {
     display: block;
-    width: 300px;
+    max-width: 300px;
+    max-height: 300px;
     position: absolute;
-    top: 60px;
+    top: 96px;
     left: -150px;
   }
 
@@ -1486,5 +1505,393 @@ h6 {
   .footer-service-list-item {
     font-size: 11px;
     line-height: 150%;
+  }
+}
+
+/* MEDIA DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  /* HEADER  */
+
+  .header {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .logo-photo {
+    margin-bottom: 16px;
+  }
+
+  .header-menu-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .header-menu-link {
+    font-size: 20px;
+    line-height: 220%;
+  }
+
+  .header-menu-icon {
+    display: none;
+  }
+
+  .header-search-icon {
+    display: none;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* HERO */
+
+  .hero-section {
+    display: flex;
+    gap: 286px;
+  }
+
+  .hero-title {
+    font-weight: 300;
+    font-size: 140px;
+    line-height: 46%;
+    margin-top: 258px;
+    margin-bottom: 40px;
+  }
+
+  .hero-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 183%;
+    margin-bottom: 80px;
+  }
+
+  .hero-list {
+    gap: 138px;
+    margin-bottom: 68px;
+  }
+
+  .hero-button {
+    width: 636px;
+    height: 80px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 137%;
+    margin-bottom: 150px;
+  }
+
+  .hero-photo {
+    max-width: 500px;
+    height: 672px;
+  }
+
+  /* ABOUT */
+
+  .about {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .about-section {
+    width: 1440px;
+  }
+
+  .about-text {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 92%;
+    margin-bottom: 50px;
+  }
+
+  .about-list-title {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .first {
+    font-size: 113px;
+  }
+
+  .second {
+    font-size: 106px;
+  }
+
+  .third {
+    font-size: 106px;
+  }
+
+  .fourth {
+    font-size: 106px;
+  }
+
+  .about-list-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    max-width: 364px;
+  }
+
+  .about-list-item {
+    width: 647px;
+    height: 300px;
+  }
+
+  .pations {
+    border-radius: 50px 0 0 0;
+  }
+
+  .vacinations {
+    border-radius: 0 50px 0 0;
+  }
+
+  .research {
+    border-radius: 0 0 0 50px;
+  }
+
+  .care {
+    border-radius: 0 0 50px 0;
+  }
+
+  /* DOCTORPAGE */
+
+  .doctorpage {
+    padding-top: 200px;
+    padding-bottom: 224px;
+  }
+
+  .doctorpage-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 92%;
+    padding-left: 36px;
+    padding-top: 40px;
+    margin-bottom: 52px;
+  }
+
+  .doctorpage-list {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    margin-bottom: 40px;
+  }
+
+  .doctorpage-list-title {
+    font-weight: 400;
+    font-size: 96px;
+    padding-left: 39px;
+  }
+
+  .doctorpage-list-text {
+    font-size: 32px;
+    text-align: center;
+    padding-left: 39px;
+  }
+
+  .doctorpage-container {
+    border: 1px solid #a4cef5;
+    border-radius: 50px;
+    width: 734px;
+    height: 356px;
+    position: relative;
+  }
+
+  .doctorpage-button {
+    border-radius: 50px;
+    width: 704px;
+    min-height: 80px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 137%;
+    text-align: center;
+    transition-duration: 300ms;
+    height: 56px;
+    position: absolute;
+    top: 94%;
+    right: 16px;
+  }
+
+  .doctorpage-accent {
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  .doctorpage-photo-container {
+    margin-bottom: 80px;
+    position: relative;
+    left: 0;
+  }
+
+  .doctorpage-photo-list-item {
+    position: absolute;
+    top: 10px;
+  }
+
+  .pos-first {
+    width: 270px;
+    height: 270px;
+    top: -132px;
+    right: 192px;
+  }
+
+  .pos-second {
+    position: absolute;
+    top: -172px;
+    width: 266px;
+    height: 270px;
+  }
+
+  .pos-third {
+    display: block;
+    min-width: 391px;
+    min-height: 398px;
+    position: absolute;
+    top: 108px;
+    left: -246px;
+  }
+
+  /* PAYMENTSPAGE */
+
+  .paymentspage {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
+
+  .paymentspage-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 92%;
+    margin-bottom: 68px;
+  }
+
+  .paymentspage-list-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 183%;
+  }
+
+  .paymentspage-list-icon {
+    width: 95px;
+    height: 95px;
+  }
+
+  .paymentspage-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 66px;
+  }
+
+  .paymentspage-list-item {
+    min-height: 270px;
+    width: 270px;
+  }
+
+  .paymentspage-list-container {
+    padding-top: 54px;
+  }
+
+  .paymentspage-list-icon {
+    margin-bottom: 32px;
+  }
+
+  .line::after {
+    content: "";
+    width: 65px;
+    border: 1px solid var(--background-color-button);
+    position: absolute;
+    right: -65px;
+    bottom: 50%;
+  }
+
+  .line-desktop::after {
+    content: "";
+    width: 65px;
+    border: 1px solid var(--background-color-button);
+    position: absolute;
+    right: -65px;
+    bottom: 50%;
+  }
+
+  .none::after {
+    display: none;
+  }
+
+  .paymentspage-swap-list {
+    display: none;
+  }
+
+  /* QUESTIONSPAGE */
+
+  .questionspage {
+    padding-top: 24px;
+    padding-bottom: 93px;
+  }
+
+  .questionspage-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 92%;
+    margin-bottom: 74px;
+  }
+
+  .questionspage-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 126px;
+    align-items: flex-start;
+  }
+
+  .questionspage-list-item {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 137%;
+    margin-bottom: 56px;
+  }
+
+  .questionspage-list-container {
+    border-radius: 50px;
+    padding: 56px;
+    min-width: 449px;
+    height: 1466px;
+  }
+
+  .questionspage-list-circle-average {
+    width: 176px;
+    height: 177px;
+    margin-bottom: 175px;
+  }
+
+  .questionspage-list-circle-big {
+    width: 290px;
+    height: 275px;
+    margin-bottom: 177px;
+  }
+
+  .questionspage-list-circle-small {
+    width: 130px;
+    height: 130px;
+  }
+
+  .questionspage-list-item:nth-last-child(1) {
+    margin-bottom: 23px;
+  }
+
+  .questionspage-list {
+    margin-bottom: 109px;
+  }
+
+  .questionspage-list-ordered-item {
+    font-weight: 600;
+    font-size: 32px;
+    width: 832px;
+    height: 98px;
   }
 }
