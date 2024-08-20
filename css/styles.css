@@ -1894,4 +1894,135 @@ h6 {
     width: 832px;
     height: 98px;
   }
+
+  /* RESPONSEPAGE */
+
+  .responsepage {
+    padding-top: 0;
+    padding-bottom: 23px;
+  }
+
+  .responsepage-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 92%;
+    margin-bottom: 24px;
+  }
+
+  .responsepage-list-text {
+    font-size: 32px;
+    padding-left: 80px;
+  }
+
+  .responsepage-list-text-container {
+    border-radius: 50px;
+    width: 680px;
+    height: 340px;
+  }
+
+  .responsepage-container {
+    gap: 60px;
+  }
+
+  .responsepage-photo {
+    display: block;
+    margin-bottom: 98px;
+    width: 743px;
+    height: 731px;
+  }
+
+  .responsepage-list-photo {
+    width: 189px;
+    height: 193px;
+    left: -20%;
+    top: 72px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 10px;
+    width: 1920px;
+  }
+
+  .address {
+    margin-bottom: 18px;
+  }
+
+  .address-list {
+    gap: 140px;
+  }
+
+  .address-list-item-text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .address-list-item-link {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .soc-nav {
+    gap: 16px;
+  }
+
+  .footer-info-logo {
+    margin-right: 130px;
+  }
+
+  .footer-info-first {
+    display: block;
+    margin-right: 205px;
+    min-width: 417px;
+  }
+
+  .footer-info-second {
+    display: block;
+    margin-right: 345px;
+  }
+
+  .footer-info-third {
+    display: block;
+    min-width: 142px;
+  }
+
+  .footer-info {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .footer-nav {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .footer-service {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .footer-info-list-item {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .footer-nav-text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .footer-service-list-item {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .footer-wrapper {
+    width: 1920px;
+    background-color: var(--background-color-footer);
+  }
 }
